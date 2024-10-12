@@ -793,6 +793,7 @@ p a {
 	letter-spacing: -0.64px;
 	background: linear-gradient(180deg, #ffffff, #787878);
 	z-index: 103;
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }

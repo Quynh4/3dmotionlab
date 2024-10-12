@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { ReactComponent as VRIcon } from "../../assets/images/icon-vr-white.svg";
 
 const VR360Prices = () => {

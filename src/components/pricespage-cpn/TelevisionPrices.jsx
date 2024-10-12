@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { ReactComponent as CameraIcon } from "../../assets/images/icon-camera.svg";
 const TelevisionPrices = () => {
 	return (

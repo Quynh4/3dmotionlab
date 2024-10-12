@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import VideoTVC from "../ui/VideoTVC";
 import { ReactComponent as CameraIcon } from "../../assets/images/icon-camera.svg";
 import { ReactComponent as MovieIcon } from "../../assets/images/icon-movie.svg";
