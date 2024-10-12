@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import ContactButton from "../ui/ContactButton";
 import VideoTVC from "../ui/VideoTVC";
 import { ReactComponent as Icon1 } from "../../assets/images/icon1.svg";
@@ -7,40 +6,6 @@ import { ReactComponent as Icon3 } from "../../assets/images/icon3.svg";
 import { ReactComponent as Icon4 } from "../../assets/images/icon4.svg";
 
 const Hero = () => {
-	useEffect(() => {
-		const videos = document.querySelectorAll(".custom-video_video");
-
-		videos.forEach((video, i) => {
-			video.addEventListener("click", function () {
-				const controls = this.nextElementSibling;
-				if (controls.innerHTML === "►") {
-					controls.innerHTML = "||";
-					this.play();
-				} else {
-					this.pause();
-					controls.innerHTML = "►";
-				}
-			});
-
-			video.addEventListener("mouseover", function () {
-				const controls = this.nextElementSibling;
-				controls.style.display = "flex";
-			});
-
-			video.addEventListener("mouseout", function () {
-				const controls = this.nextElementSibling;
-				if (!this.paused) {
-					controls.style.display = "none";
-				}
-			});
-
-			video.addEventListener("ended", function () {
-				const controls = this.nextElementSibling;
-				controls.style.display = "flex";
-				controls.innerHTML = "►";
-			});
-		});
-	}, []);
 	return (
 		<section className="hero">
 			<div className="icon-1 home__icon">
@@ -52,7 +17,7 @@ const Hero = () => {
 			<div className="icon-3 home__icon">
 				<Icon3 />
 			</div>
-			<div className="icon-4 home__icon">
+			<div className="icon-4 ">
 				<Icon4 />
 			</div>
 

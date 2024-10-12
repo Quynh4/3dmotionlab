@@ -7,7 +7,7 @@ const ContactInfo = () => {
 			<div className="logo">
 				<img src={logo} alt="3D Motion Lab" />
 			</div>
-			<div className="contact-info">
+			<div className="contact-info__text">
 				<p>
 					<strong>Thông tin liên hệ:</strong>
 				</p>

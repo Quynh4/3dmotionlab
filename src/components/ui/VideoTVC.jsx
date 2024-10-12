@@ -8,6 +8,7 @@ const VideoTVC = () => {
 	const videoRef = useRef(null);
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
+
 	const handlePlayPause = () => {
 		if (isPlaying) {
 			videoRef.current.pause();
@@ -28,7 +29,7 @@ const VideoTVC = () => {
 			onMouseLeave={() => setIsHovered(false)}
 		>
 			<video
-				ref={videoRef}
+				ref={videoRef ? videoRef : null}
 				className="custom-video_video"
 				width="100%"
 				height="auto"
