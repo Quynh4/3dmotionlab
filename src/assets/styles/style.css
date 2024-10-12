@@ -8,7 +8,7 @@ body {
 	font-family: "BT Beau Sans", sans-serif;
 	background-color: #000850;
 	color: #ffffff;
-	background-image: url("./assets/img/background.png");
+	background-image: url("../images/background.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -16,7 +16,7 @@ body {
 /* Regular */
 @font-face {
 	font-family: "BT Beau Sans";
-	src: url("./assets/fonts/BT-BeauSans-Regular-BF64d45952e54c1.ttf")
+	src: url("../fonts/BT-BeauSans-Regular-BF64d45952e54c1.ttf")
 		format("truetype");
 	font-weight: 400;
 	font-style: normal;
@@ -25,8 +25,7 @@ body {
 /* Italic */
 @font-face {
 	font-family: "BT Beau Sans";
-	src: url("./assets/fonts/BT-BeauSans-Italic-BF64d4595396170.ttf")
-		format("truetype");
+	src: url("../fonts/BT-BeauSans-Italic-BF64d4595396170.ttf") format("truetype");
 	font-weight: 400;
 	font-style: italic;
 }
@@ -34,8 +33,7 @@ body {
 /* Bold */
 @font-face {
 	font-family: "BT Beau Sans";
-	src: url("./assets/fonts/BT-BeauSans-Bold-BF64d45953acd04.ttf")
-		format("truetype");
+	src: url("../fonts/BT-BeauSans-Bold-BF64d45953acd04.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -43,7 +41,7 @@ body {
 /* Bold Italic */
 @font-face {
 	font-family: "BT Beau Sans";
-	src: url("./assets/fonts/BT-BeauSans-BoldItalic-BF64d45953b4a19.ttf")
+	src: url("../fonts/BT-BeauSans-BoldItalic-BF64d45953b4a19.ttf")
 		format("truetype");
 	font-weight: 700;
 	font-style: italic;
@@ -52,7 +50,7 @@ body {
 /* ExtraBold */
 @font-face {
 	font-family: "BT Beau Sans";
-	src: url("./assets/fonts/BT-BeauSans-ExtraBold-BF64d45953a17ee.ttf")
+	src: url("../fonts/BT-BeauSans-ExtraBold-BF64d45953a17ee.ttf")
 		format("truetype");
 	font-weight: 800;
 	font-style: normal;
@@ -61,25 +59,16 @@ body {
 /* ExtraBold Italic */
 @font-face {
 	font-family: "BT Beau Sans";
-	src: url("./assets/fonts/BT-BeauSans-ExtraBoldItalic-BF64d45953a22c9.ttf")
+	src: url("../fonts/BT-BeauSans-ExtraBoldItalic-BF64d45953a22c9.ttf")
 		format("truetype");
 	font-weight: 800;
 	font-style: italic;
 }
 
-/* Light */
-@font-face {
-	font-family: "BT Beau Sans";
-	src: url("./assets/fonts/BT-BeauSans-Light-BF64d459538c6d.ttf")
-		format("truetype");
-	font-weight: 300;
-	font-style: normal;
-}
-
 /* Light Italic */
 @font-face {
 	font-family: "BT Beau Sans";
-	src: url("./assets/fonts/BT-BeauSans-LightItalic-BF64d4595380e0.ttf")
+	src: url("../fonts/BT-BeauSans-LightItalic-BF64d4595380ee0.ttf")
 		format("truetype");
 	font-weight: 300;
 	font-style: italic;
@@ -88,8 +77,7 @@ body {
 /* Medium */
 @font-face {
 	font-family: "BT Beau Sans";
-	src: url("./assets/fonts/BT-BeauSans-Medium-BF64d459538d81.ttf")
-		format("truetype");
+	src: url("../fonts/BT-BeauSans-Medium-BF64d4595383d81.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
@@ -97,7 +85,7 @@ body {
 /* Medium Italic */
 @font-face {
 	font-family: "BT Beau Sans";
-	src: url("./assets/fonts/BT-BeauSans-MediumItalic-BF64d459537767c.ttf")
+	src: url("../fonts/BT-BeauSans-MediumItalic-BF64d459537767c.ttf")
 		format("truetype");
 	font-weight: 500;
 	font-style: italic;
@@ -166,6 +154,7 @@ p a {
 .menu-item {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .menu-item a {
@@ -219,14 +208,14 @@ p a {
 	display: block;
 }
 
-.vector {
+/* .vector {
 	margin-left: auto;
 	width: 1px;
 	height: 84px;
-	background: url(./assets/images/9d648666-e4ea-464e-b36e-5b3fae3c2489.png)
+	background: url(../images/9d648666-e4ea-464e-b36e-5b3fae3c2489.png)
 		no-repeat center;
 	background-size: cover;
-}
+} */
 
 /* ================= NAVBAR END ================= */
 
@@ -238,10 +227,10 @@ p a {
 
 .hero .frame-1 {
 	margin-left: auto;
-	margin-right: 10px; /* Điều chỉnh margin để đúng vị trí */
+	margin-right: 10px;
 	width: 68px;
 	height: 68px;
-	background: url("./assets/img/icon-3d.svg");
+	background: url("../images/icon-3d.svg");
 }
 
 .text {
