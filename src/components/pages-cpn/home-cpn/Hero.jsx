@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import tvc from "../assets/images/tvc.png";
 import video from "../assets/videos/video.mp4";
+import ContactButton from "../../common/ContactButton";
 
 const Hero = () => {
 	useEffect(() => {
@@ -73,37 +74,7 @@ const Hero = () => {
 					khách hàng.
 				</p>
 
-				<div className="contact-now">
-					<a href="#" className="cta-btn">
-						Liên hệ ngay
-					</a>
-					<div className="icon">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="17"
-							height="16"
-							viewBox="0 0 17 16"
-							fill="none"
-						>
-							<mask
-								id="mask0_1_576"
-								maskUnits="userSpaceOnUse"
-								x="0"
-								y="0"
-								width="17"
-								height="16"
-							>
-								<rect x="0.5" width="16" height="16" fill="#D9D9D9" />
-							</mask>
-							<g mask="url(#mask0_1_576)">
-								<path
-									d="M11.7001 5.6501L4.96674 12.3834C4.84452 12.5057 4.70563 12.564 4.55007 12.5584C4.39452 12.5529 4.25563 12.489 4.13341 12.3668C4.01118 12.2445 3.95007 12.1029 3.95007 11.9418C3.95007 11.7807 4.01118 11.639 4.13341 11.5168L10.8501 4.8001H7.49857C7.32902 4.8001 7.18685 4.74293 7.07207 4.6286C6.95741 4.51426 6.90007 4.3726 6.90007 4.2036C6.90007 4.0346 6.95752 3.89176 7.07241 3.7751C7.1873 3.65843 7.32968 3.6001 7.49957 3.6001H12.2952C12.4651 3.6001 12.6084 3.65754 12.7251 3.77243C12.8417 3.88732 12.9001 4.02971 12.9001 4.1996V8.99526C12.9001 9.16515 12.8429 9.30843 12.7286 9.4251C12.6142 9.54176 12.4726 9.6001 12.3036 9.6001C12.1346 9.6001 11.9917 9.54276 11.8751 9.4281C11.7584 9.31332 11.7001 9.17115 11.7001 9.0016V5.6501Z"
-									fill="black"
-								/>
-							</g>
-						</svg>
-					</div>
-				</div>
+				<ContactButton />
 
 				<div className="custom-video_container">
 					<video

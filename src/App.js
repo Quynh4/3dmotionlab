@@ -1,25 +1,25 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "./assets/styles/style.css";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import FAQ from "./components/FAQ";
-import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ServicesPage from "./pages/ServicesPage";
+import Header from "./components/Header";
 
 function App() {
 	return (
-		<div className="App">
-			<Header />
-			<div className="container">
-				<Hero />
-				<Services />
-				<Testimonial />
-				<FAQ />
+		<Router>
+			<div className="App">
+				<Header />
+				<div className="container">
+					<Routes>
+						<Route path="/" element={<HomePage />} />
+						<Route path="/dich-vu" element={<ServicesPage />} />
+					</Routes>
+				</div>
 				<Footer />
 			</div>
-		</div>
+		</Router>
 	);
 }
 

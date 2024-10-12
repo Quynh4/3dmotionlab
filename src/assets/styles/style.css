@@ -238,7 +238,9 @@ p a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
+	gap: 1.5rem;
+	position: relative;
+	top: 2rem;
 }
 
 .text h1,
@@ -466,8 +468,6 @@ p a {
 	border-radius: 12px;
 }
 
-.small-img img {
-}
 .services .service-grid {
 	display: flex;
 	gap: 1rem;
@@ -603,8 +603,6 @@ p a {
 	justify-content: space-between;
 }
 
-.footer .logo {
-}
 .footer-content {
 	display: flex;
 	justify-content: space-between;
