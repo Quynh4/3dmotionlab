@@ -1,0 +1,708 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "BT Beau Sans", sans-serif;
+	background-color: #000850;
+	color: #ffffff;
+	background-image: url("./assets/img/background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* Regular */
+@font-face {
+	font-family: "BT Beau Sans";
+	src: url("./assets/fonts/BT-BeauSans-Regular-BF64d45952e54c1.ttf")
+		format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Italic */
+@font-face {
+	font-family: "BT Beau Sans";
+	src: url("./assets/fonts/BT-BeauSans-Italic-BF64d4595396170.ttf")
+		format("truetype");
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* Bold */
+@font-face {
+	font-family: "BT Beau Sans";
+	src: url("./assets/fonts/BT-BeauSans-Bold-BF64d45953acd04.ttf")
+		format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+	font-family: "BT Beau Sans";
+	src: url("./assets/fonts/BT-BeauSans-BoldItalic-BF64d45953b4a19.ttf")
+		format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}
+
+/* ExtraBold */
+@font-face {
+	font-family: "BT Beau Sans";
+	src: url("./assets/fonts/BT-BeauSans-ExtraBold-BF64d45953a17ee.ttf")
+		format("truetype");
+	font-weight: 800;
+	font-style: normal;
+}
+
+/* ExtraBold Italic */
+@font-face {
+	font-family: "BT Beau Sans";
+	src: url("./assets/fonts/BT-BeauSans-ExtraBoldItalic-BF64d45953a22c9.ttf")
+		format("truetype");
+	font-weight: 800;
+	font-style: italic;
+}
+
+/* Light */
+@font-face {
+	font-family: "BT Beau Sans";
+	src: url("./assets/fonts/BT-BeauSans-Light-BF64d459538c6d.ttf")
+		format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+	font-family: "BT Beau Sans";
+	src: url("./assets/fonts/BT-BeauSans-LightItalic-BF64d4595380e0.ttf")
+		format("truetype");
+	font-weight: 300;
+	font-style: italic;
+}
+
+/* Medium */
+@font-face {
+	font-family: "BT Beau Sans";
+	src: url("./assets/fonts/BT-BeauSans-Medium-BF64d459538d81.ttf")
+		format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+	font-family: "BT Beau Sans";
+	src: url("./assets/fonts/BT-BeauSans-MediumItalic-BF64d459537767c.ttf")
+		format("truetype");
+	font-weight: 500;
+	font-style: italic;
+}
+
+p {
+	font-family: "BT Beau Sans";
+	color: #afafaf;
+	font-size: 13px;
+}
+p a {
+	position: relative;
+	color: #006aff;
+	font-family: BT Beau Sans, var(--default-font-family);
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+	opacity: 1;
+}
+
+.text .subtext {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 5px 16px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 99px;
+	margin-bottom: 1rem;
+}
+
+.subtext .icon {
+	flex-shrink: 0;
+	position: relative;
+	width: 18px;
+	height: 18px;
+	z-index: 60;
+}
+/* ================= NAVBAR START  ================= */
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+	height: 89px;
+	top: 0;
+	background: #000850;
+	border-top: 1px solid rgba(58, 100, 255, 0.15);
+	border-bottom: 1px solid rgba(58, 100, 255, 0.15);
+	position: sticky;
+	z-index: 500;
+}
+
+.navbar .logo {
+	margin-left: 17rem;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 20px; /* Khoảng cách giữa các mục menu */
+	margin-right: 224px; /* Khoảng cách từ cạnh phải */
+	list-style: none;
+}
+
+.menu-item {
+	display: flex;
+	align-items: center;
+}
+
+.menu-item a {
+	color: white;
+	transition: color 0.3s;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+.menu-item a:hover {
+	color: #f0a500;
+}
+
+.dropdown-arrow {
+	font-size: 10px;
+	margin-left: 2px;
+	width: 20px;
+	height: 20px;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #28356b;
+	padding: 10px 0;
+	list-style: none;
+	min-width: 150px;
+	z-index: 1;
+	border-radius: 4px;
+}
+
+.dropdown li {
+	padding: 5px 20px;
+	list-style: none;
+}
+
+.dropdown li a {
+	color: white;
+	display: block;
+	font-size: 16px;
+}
+
+.dropdown li a:hover {
+	background-color: #3c4d8e;
+}
+
+.menu-item:hover .dropdown {
+	display: block;
+}
+
+.vector {
+	margin-left: auto;
+	width: 1px;
+	height: 84px;
+	background: url(./assets/images/9d648666-e4ea-464e-b36e-5b3fae3c2489.png)
+		no-repeat center;
+	background-size: cover;
+}
+
+/* ================= NAVBAR END ================= */
+
+/* ================= HEROPAGE START  ================= */
+
+.hero {
+	padding: 8rem;
+}
+
+.hero .frame-1 {
+	margin-left: auto;
+	margin-right: 10px; /* Điều chỉnh margin để đúng vị trí */
+	width: 68px;
+	height: 68px;
+	background: url("./assets/img/icon-3d.svg");
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.text h1,
+.text h2 {
+	text-align: center;
+	font-weight: 700;
+	background: linear-gradient(180deg, #ffffff, #bababa);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text h1 {
+	font-size: 4rem;
+	line-height: 5rem;
+	margin-bottom: -0.5rem;
+	margin-top: 1rem;
+}
+
+.text h2 {
+	font-size: 2.8rem;
+	line-height: 4rem;
+	font-family: "BT Beau Sans";
+}
+
+.hero .description {
+	color: var(--Global-Ultramarine-100, #9da6f3);
+	text-align: justify;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	margin-top: 1rem;
+}
+
+.video-container {
+	position: relative;
+	width: fit-content;
+}
+
+.play-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	background: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Oswald:wght@300;400&display=swap");
+.custom-video_container {
+	position: relative;
+	width: 72vw;
+	height: auto;
+	top: 0.75em;
+}
+
+.custom-video_video {
+	cursor: pointer;
+	width: 100%;
+	height: 37rem;
+	object-fit: cover;
+}
+
+.custom-video_control {
+	position: absolute;
+	top: 43%;
+	left: 46%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: 400;
+	width: 3em;
+	height: 3em;
+	line-height: 0;
+	cursor: pointer;
+}
+
+.custom-video_container video::-webkit-media-controls {
+	display: none;
+}
+
+.custom-video_container video::-moz-media-controls {
+	display: none;
+}
+
+.hero p {
+	margin-bottom: 2rem;
+	margin: 0 auto;
+	width: 704px;
+}
+
+.contact-now {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 178px;
+	height: 60px;
+	padding: 18px 16px 18px 20px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 99px;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+.contact-now a {
+	text-decoration: none;
+}
+
+.cta-btn {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	flex-shrink: 0;
+	flex-basis: auto;
+	color: #ffffff;
+	font-family: BT Beau Sans, var(--default-font-family);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: right;
+	white-space: nowrap;
+	z-index: 70;
+}
+
+.contact-now .icon {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	flex-shrink: 0;
+	gap: 4px;
+	position: relative;
+	width: 34px;
+	padding: 4px 9px 4px 9px;
+	background: #006aff;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	z-index: 71;
+	border-radius: 99px;
+}
+
+.video-banner {
+	margin-top: 2rem;
+}
+
+/* ================= HEROPAGE END  =================  */
+/* ================= SERVICE START  =================  */
+
+.services h2 {
+	font-size: 3.5rem;
+	padding: 3rem;
+	line-height: 4.9rem;
+}
+
+.service-item .text-1 {
+	position: absolute;
+	color: white;
+	background: linear-gradient(
+		180deg,
+		rgba(4, 12, 48, 0) 10.04%,
+		#040c30 43.19%
+	);
+	display: flex;
+	padding: 44px 47px 40px 47px;
+	justify-content: center;
+	align-items: center;
+	bottom: 0rem;
+	flex-direction: column;
+}
+
+.service-item .text-1 p {
+	display: flex;
+	text-align: center;
+}
+.service-item h3 {
+	margin-bottom: 1rem;
+}
+
+.service-item .text-2 {
+	position: absolute;
+	color: white;
+	background: linear-gradient(
+		180deg,
+		rgba(4, 12, 48, 0) 10.04%,
+		#040c30 43.19%
+	);
+	display: flex;
+	padding: 44px 47px 40px 47px;
+	justify-content: center;
+	bottom: 0rem;
+	flex-direction: column;
+}
+
+.service-item .text-2 h3 {
+	display: flex;
+	text-align: left;
+}
+
+.text-3 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: nowrap;
+	gap: 16px;
+	position: relative;
+	width: 435px;
+	margin: 32px 0 0 48px;
+	z-index: 108;
+}
+
+.small-img {
+	position: absolute;
+	top: 11rem;
+	left: 3rem;
+	background: #9da6f2;
+	z-index: 111;
+	border-radius: 12px;
+}
+
+.small-img img {
+}
+.services .service-grid {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+.services .column {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.service-item {
+	position: relative;
+	width: 34rem;
+	overflow: hidden;
+	background-color: #010d71;
+}
+
+.service-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* ================= SERVICE END  =================  */
+/* ================= TESTIMONIAL START  =================  */
+.testimonial {
+	padding: 14rem 2rem 0rem 2rem;
+}
+
+.testimonial .testimonial-grid {
+	display: flex;
+	gap: 6rem;
+	justify-content: center;
+}
+.testimonial .column {
+	display: flex;
+	flex-direction: column;
+	width: 23rem;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.testimonial h3 {
+	font-size: 1.4rem;
+}
+/* ================= TESTIMONIAL END  =================  */
+/* ================= FAQ START  ================= */
+
+.faq {
+	padding: 4rem 2rem;
+}
+
+.faq-container {
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 20px;
+}
+
+.faq-item {
+	border-bottom: 2px solid #1447d3;
+	padding: 1.5rem;
+}
+
+.faq-question {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	padding: 10px 0;
+	align-items: center;
+}
+
+.faq-question span {
+	font-size: 18px;
+}
+
+.faq-answer {
+	display: none;
+	margin: 10px 0;
+	padding-right: 2rem;
+}
+
+.faq ul {
+	padding-left: 1.5rem;
+}
+.faq li {
+	font-family: "BT Beau Sans";
+	color: #afafaf;
+	font-size: 13px;
+}
+
+.toggle-btn {
+	font-size: 24px;
+	color: #59c2ff;
+	font-weight: bold; /* Đậm hơn để nổi bật */
+	transition: color 0.3s; /* Thêm hiệu ứng chuyển màu */
+}
+
+.faq-item.open .toggle-btn {
+	color: #ff6161;
+	font-size: 28px; /* Kích thước lớn hơn khi mở */
+	transform: rotate(180deg); /* Xoay khi mở để tạo cảm giác động */
+}
+
+.faq-item.open .faq-answer {
+	display: block;
+	padding-bottom: 1rem;
+}
+/* ================= FAQ END  ================= */
+
+.footer {
+	padding: 80px 144px 80px 144px;
+}
+
+.footer .column-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	flex-shrink: 0;
+	gap: 24px;
+	position: relative;
+	width: 360px;
+}
+
+.footer .column-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 6rem;
+	position: relative;
+	width: 360px;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.footer .logo {
+}
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1200px;
+	flex-wrap: nowrap;
+}
+
+.logo img {
+	width: 5rem;
+}
+
+.footer strong {
+	color: white;
+}
+
+.contact-info__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.contact-info__item svg {
+	margin-right: 1rem;
+}
+
+.contact-info__item p {
+	margin: 0;
+	color: rgb(231 231 231 / 60%);
+}
+
+.footer-links {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-shrink: 0;
+	position: relative;
+	width: 281px;
+	z-index: 245;
+}
+
+.footer-links a {
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-shrink: 0;
+	gap: 1rem;
+	position: relative;
+	margin-left: 20px;
+	justify-content: center;
+}
+
+.footer-links a:hover {
+	color: orange;
+}
+
+.social-icons {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.social-icons a {
+	margin: 0 10px;
+}
+
+.social-icons img {
+	width: 30px;
+	height: auto;
+}
+
+@media (max-width: 768px) {
+	.footer-content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contact-info,
+	.footer-links,
+	.social-icons {
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	.social-icons {
+		justify-content: center;
+	}
+}
