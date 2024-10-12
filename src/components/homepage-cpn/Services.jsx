@@ -39,7 +39,7 @@ const Services = () => {
 						<div className="service-item" style={{ height: "340px" }}>
 							<img src={tvc} alt="Television Commercial" />
 							<div className="text-1">
-								<h3>Television Commercial (TVC)</h3>
+								<h3>Television Commercial(TVC)</h3>
 								<p>
 									Phim được phát hành trên các phương tiện truyền thông đại
 									chúng quảng cáo sản phẩm hoặc dịch vụ.

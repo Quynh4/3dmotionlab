@@ -17,7 +17,7 @@ const Services = () => {
 							<CameraIcon />
 						</div>
 
-						<span>FAQ</span>
+						<span>TVC</span>
 					</div>
 					<h2>Television Commercial</h2>
 					<p>
@@ -81,7 +81,6 @@ const Services = () => {
 						<div className="icon">
 							<VRIcon />
 						</div>
-
 						<span>VR360</span>
 					</div>
 					<h2>VR360 Virtual Tour</h2>

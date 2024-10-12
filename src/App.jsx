@@ -5,6 +5,8 @@ import Footer from "./components/common-cpn/Footer";
 import Home from "./pages/HomePage";
 import ServicesPage from "./pages/ServicesPage";
 import "./assets/styles/styles.css";
+import PricesPage from "./pages/PricesPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
 	return (
@@ -14,6 +16,8 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/dich-vu" element={<ServicesPage />} />
+					<Route path="/bao-gia" element={<PricesPage />} />
+					<Route path="/ve-chung-toi" element={<AboutPage />} />
 				</Routes>
 				<Footer />
 			</div>

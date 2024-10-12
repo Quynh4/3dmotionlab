@@ -123,7 +123,6 @@ p a {
 	position: relative;
 	width: 18px;
 	height: 18px;
-	z-index: 60;
 }
 /* ================= NAVBAR START  ================= */
 
@@ -539,6 +538,7 @@ p a {
 
 .testimonial h3 {
 	font-size: 1.4rem;
+	text-align: left;
 }
 /* ================= TESTIMONIAL END  =================  */
 /* ================= FAQ START  ================= */
@@ -719,3 +719,365 @@ p a {
 		justify-content: center;
 	}
 }
+
+/* ============================== PRICE START ============================== */
+
+.pricing-table {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin: 4rem;
+}
+
+.pricing-card {
+	background-color: #000a6b;
+	width: 25rem;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+.pricing-card:hover {
+	background-image: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.4) 6%,
+		rgba(35, 47, 158, 0) 20%
+	);
+	transition: all 1s ease;
+}
+
+.standard.pricing-card:hover {
+	background-image: linear-gradient(0deg, #00d9ff 6%, rgba(35, 47, 158, 0) 20%);
+	transition: all 1s ease;
+}
+
+.premium.pricing-card:hover {
+	background-image: linear-gradient(0deg, #fc0 6%, rgba(35, 47, 158, 0) 20%);
+	transition: all 1s ease;
+}
+
+.pricing-card__head {
+	height: 80px;
+	overflow: hidden;
+	background: linear-gradient(
+		0deg,
+		rgba(255, 255, 255, 0.27) 0%,
+		rgba(35, 47, 158, 0) 100%
+	);
+}
+
+.standard .pricing-card__head {
+	height: 80px;
+	overflow: hidden;
+	background: linear-gradient(0deg, #00d9ff -200%, rgba(35, 47, 158, 0) 100%);
+}
+
+.premium .pricing-card__head {
+	height: 80px;
+	overflow: hidden;
+	background: linear-gradient(0deg, #fc0 -200%, rgba(35, 47, 158, 0) 100%);
+}
+.pricing-card h2 {
+	display: block;
+	position: relative;
+	height: 36px;
+	margin: 24px 0 0 20px;
+	color: #ffffff;
+	font-family: BT Beau Sans, var(--default-font-family);
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 36px;
+	text-align: left;
+	white-space: nowrap;
+	letter-spacing: -0.64px;
+	background: linear-gradient(180deg, #ffffff, #787878);
+	z-index: 103;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.standard h2 {
+	background: linear-gradient(180deg, #1dffff 48.82%, #003e9b 99.63%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.premium h2 {
+	background: linear-gradient(180deg, #f8c805 57.3%, #bd5f00 99.63%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.pricing-card__content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+	gap: 8px;
+	position: relative;
+	padding: 20px;
+}
+
+.pricing-card__content p {
+	align-self: stretch;
+	flex-shrink: 0;
+	flex-basis: auto;
+	position: relative;
+	min-width: 0;
+	height: 32px;
+	color: #ffffff;
+	font-family: BT Beau Sans, var(--default-font-family);
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 32px;
+	text-align: left;
+	white-space: nowrap;
+	letter-spacing: -0.4px;
+	z-index: 69;
+}
+
+.pricing-card ul {
+	list-style: none;
+}
+.pricing-card ul li {
+	position: relative;
+	list-style: none;
+	margin-left: 55px;
+	color: lightgray;
+	text-align: left;
+}
+.pricing-card ul li::before {
+	content: "";
+	display: block;
+	width: 4px;
+	height: 14px;
+	top: 4px;
+	left: -30px;
+	border-radius: 0;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-right: 2px solid lightgray;
+	border-bottom: 2px solid lightgray;
+	position: absolute;
+	-webkit-transition: all 0.12s, border-color 0.08s;
+	transition: all 0.12s, border-color 0.08s;
+}
+.pricing-card__btn {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	justify-content: center;
+}
+
+.pricing-card .button .cta-btn:hover {
+	background-color: #000a6b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 178px;
+	height: 56px;
+	padding: 16px 20px 16px 20px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 99px;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	transform: scale(1.4);
+}
+
+.pricing-card .button .cta-btn::after {
+	content: url("../images/icon-arrow.svg");
+	font-weight: 900;
+	position: absolute;
+	right: -30px;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+	background-color: #006aff;
+	border-radius: 40%;
+	width: 25px;
+	height: 20px;
+	text-align: center;
+	margin-left: 50px;
+}
+
+/* Show icon when hovered */
+.pricing-card .button .cta-btn:hover::after {
+	opacity: 1;
+	right: 10px;
+}
+
+/* .premium:hover {
+	background-color: #ffd700;
+	color: rgb(109, 89, 89);
+}
+
+.premium:hover button {
+	background-color: #004c80;
+} */
+
+/* Button hover effect for premium */
+.premium button {
+	background-color: #ffd700;
+	color: black;
+}
+
+.premium button:hover {
+	background-color: #ffa500;
+}
+/* ============================== PRICE END ============================== */
+
+.content {
+	position: relative;
+	margin: 7rem 14rem;
+	background: #000535;
+	padding: 2rem;
+	color: #a8a8a8;
+	text-align: left;
+}
+
+.content h3 {
+	color: white;
+	margin-bottom: 1rem;
+}
+
+.content ul {
+	color: #a8a8a8;
+	margin-left: 30px;
+}
+
+/* ============================== PRICE END ============================== */
+
+/* ============================== 3D WEBSITE START ============================ */
+
+.package-content {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	position: relative;
+	margin: 2rem 14rem;
+	background: #000a6b;
+	padding: 3rem;
+}
+
+.package-content__header {
+	display: flex;
+	gap: 40rem;
+}
+
+.package-content__header .button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 178px;
+	height: 60px;
+	padding: 18px 16px 18px 20px;
+	border: 1px solid #00e6b3;
+	border-radius: 99px;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	margin: 0;
+	transition: background-color 0.3s ease;
+}
+
+.package-content__header .button:hover {
+	background-color: rgba(#00e6b3 0.2);
+}
+
+.package-content h3 {
+	position: relative;
+	height: 32px;
+	color: #ffffff;
+	font-family: BT Beau Sans, var(--default-font-family);
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 32px;
+	text-align: left;
+	white-space: nowrap;
+	letter-spacing: -0.4px;
+}
+
+.package-content ul {
+	color: white;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.package-content p {
+	color: white;
+}
+
+/* ============================== 3D WEBSITE END ============================ */
+/* ============================== ABOUT START ============================ */
+
+.about-us {
+	position: relative;
+	margin: 0 14.5rem;
+	height: 500px;
+	overflow: hidden;
+}
+
+.about-us img {
+	max-width: 100%;
+}
+.about-us .text {
+	position: absolute;
+	color: white;
+	background: linear-gradient(
+		180deg,
+		rgba(4, 12, 48, 0) 10.04%,
+		#040c30 43.19%
+	);
+	display: flex;
+	padding: 44px 47px 40px 47px;
+	justify-content: center;
+	align-items: center;
+	bottom: 0rem;
+	flex-direction: row;
+}
+.about-us h3 {
+	margin-bottom: 1rem;
+	width: 42rem;
+	font-size: 1.8rem;
+	display: flex;
+}
+
+.about-us .text p {
+	color: white;
+}
+
+.about__section {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	padding: 120px;
+}
+.about__img {
+	position: relative;
+	width: 45rem;
+	overflow: hidden;
+}
+.about__text {
+	position: relative;
+	width: 27rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	text-align: left;
+	justify-content: center;
+}
+.about__text h3 {
+	display: flex;
+	gap: 2rem;
+	font-size: 2rem;
+}
+
+/* ============================== ABOUT END ============================ */
