@@ -11,12 +11,10 @@ function App() {
 		<Router>
 			<div className="App">
 				<Header />
-				<div className="container">
-					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/dich-vu" element={<ServicesPage />} />
-					</Routes>
-				</div>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/dich-vu" element={<ServicesPage />} />
+				</Routes>
 				<Footer />
 			</div>
 		</Router>

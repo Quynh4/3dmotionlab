@@ -94,7 +94,8 @@ body {
 p {
 	font-family: "BT Beau Sans";
 	color: #afafaf;
-	font-size: 13px;
+	font-size: 16px;
+	text-align: left;
 }
 p a {
 	position: relative;
@@ -106,7 +107,7 @@ p a {
 	opacity: 1;
 }
 
-.text .subtext {
+.subtext {
 	display: flex;
 	align-items: center;
 	gap: 6px;
@@ -114,6 +115,7 @@ p a {
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 99px;
 	margin-bottom: 1rem;
+	width: fit-content;
 }
 
 .subtext .icon {
@@ -154,6 +156,7 @@ p a {
 .menu-item {
 	display: flex;
 	align-items: center;
+	position: relative;
 }
 
 .menu-item a {
@@ -221,7 +224,7 @@ p a {
 /* ================= HEROPAGE START  ================= */
 
 .hero {
-	padding: 8rem;
+	padding: 7rem;
 }
 
 .hero .frame-1 {
@@ -243,8 +246,6 @@ p a {
 .text h2 {
 	text-align: center;
 	font-weight: 700;
-	background: linear-gradient(180deg, #ffffff, #bababa);
-	-webkit-text-fill-color: transparent;
 }
 
 .text h1 {
@@ -335,7 +336,7 @@ p a {
 	width: 704px;
 }
 
-.contact-now {
+.button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -349,7 +350,7 @@ p a {
 	margin-bottom: 2rem;
 }
 
-.contact-now a {
+.button a {
 	text-decoration: none;
 }
 
@@ -369,7 +370,7 @@ p a {
 	z-index: 70;
 }
 
-.contact-now .icon {
+.button .icon {
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: nowrap;
@@ -487,6 +488,36 @@ p a {
 	object-fit: cover;
 }
 
+.service__section {
+	display: flex;
+	gap: 5rem;
+	justify-content: center;
+	padding: 120px;
+}
+.service__video {
+	position: relative;
+	width: 45rem;
+	overflow: hidden;
+}
+.service__text {
+	position: relative;
+	width: 27rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	text-align: left;
+}
+
+.service__btn-group {
+	position: absolute;
+	width: 27rem;
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	text-align: left;
+	bottom: -2rem;
+}
 /* ================= SERVICE END  =================  */
 /* ================= TESTIMONIAL START  =================  */
 .testimonial {

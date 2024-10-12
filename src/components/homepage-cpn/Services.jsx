@@ -8,7 +8,7 @@ import explore from "../../assets/images/explore.png";
 const Services = () => {
 	return (
 		<>
-			<section className="services">
+			<section className="services service-grid">
 				<div className="text">
 					<div className="subtext">
 						<div className="icon">

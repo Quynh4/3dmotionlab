@@ -3,7 +3,7 @@ import React from "react";
 
 const ContactButton = () => {
 	return (
-		<div className="contact-now">
+		<div className="button">
 			<a href="#" className="cta-btn">
 				Liên hệ ngay
 			</a>
