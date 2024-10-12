@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import { ReactComponent as ArrowIcon } from "../../assets/images/icon-arrow.svg";
 import FormModal from "../common-cpn/FormModal";
 
 const ChooseButton = () => {

@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import logo from "../../assets/images/logo.png";
 import ContactInfo from "../ui/ContactInfo";
 
 const Footer = () => {
