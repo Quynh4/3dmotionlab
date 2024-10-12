@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { ReactComponent as ArrowIcon } from "../../assets/images/icon-arrow.svg";
 import FormModal from "../common-cpn/FormModal";
 
-const ContactButton = () => {
+const ChooseButton = () => {
 	const [isPopupVisible, setIsPopupVisible] = useState(false);
 
 	const handleButtonClick = () => {
@@ -13,14 +13,11 @@ const ContactButton = () => {
 	return (
 		<div className="button">
 			<a href="#" className="cta-btn" onClick={handleButtonClick}>
-				Liên hệ ngay
+				Chọn gói này
 			</a>
-			<div className="icon">
-				<ArrowIcon />
-			</div>
 			{isPopupVisible && <FormModal onClose={handleButtonClick} />}
 		</div>
 	);
 };
 
-export default ContactButton;
+export default ChooseButton;

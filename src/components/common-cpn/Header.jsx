@@ -7,12 +7,14 @@ function Header() {
 	return (
 		<nav className="navbar">
 			<div className="logo">
-				<img src={logo} alt="3D Motion Lab" />
+				<a href="/">
+					<img src={logo} alt="3D Motion Lab" />
+				</a>
 			</div>
 			<nav>
 				<ul className="menu">
 					<li className="menu-item">
-						<a href="#">
+						<a href="/dich-vu">
 							Dịch vụ
 							<span className="dropdown-arrow">
 								<img src={expandMore} alt="Expand" />
@@ -31,7 +33,7 @@ function Header() {
 						</ul> */}
 					</li>
 					<li className="menu-item">
-						<a href="#">
+						<a href="/bao-gia">
 							Báo giá
 							<span className="dropdown-arrow">
 								<img src={expandMore} alt="Expand" />
@@ -50,7 +52,7 @@ function Header() {
 						</ul> */}
 					</li>
 					<li className="menu-item">
-						<a href="#">Về chúng tôi</a>
+						<a href="/ve-chung-toi">Về chúng tôi</a>
 					</li>
 				</ul>
 			</nav>

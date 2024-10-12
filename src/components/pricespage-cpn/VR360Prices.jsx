@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { ReactComponent as VRIcon } from "../../assets/images/icon-vr-white.svg";
+import ChooseButton from "../ui/ChooseButton";
 
 const VR360Prices = () => {
 	return (
@@ -35,11 +36,7 @@ const VR360Prices = () => {
 						</ul>
 					</div>
 					<div className="pricing-card__btn">
-						<div className="button">
-							<a href="#" className="cta-btn">
-								Chọn gói này
-							</a>
-						</div>
+						<ChooseButton />
 					</div>
 				</div>
 
@@ -65,11 +62,7 @@ const VR360Prices = () => {
 						</ul>
 					</div>
 					<div className="pricing-card__btn">
-						<div className="button">
-							<a href="#" className="cta-btn">
-								Chọn gói này
-							</a>
-						</div>
+						<ChooseButton />
 					</div>
 				</div>
 
@@ -90,11 +83,7 @@ const VR360Prices = () => {
 						</ul>
 					</div>
 					<div className="pricing-card__btn">
-						<div className="button">
-							<a href="#" className="cta-btn">
-								Chọn gói này
-							</a>
-						</div>
+						<ChooseButton />
 					</div>
 				</div>
 			</div>

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { ReactComponent as CameraIcon } from "../../assets/images/icon-camera.svg";
+import ChooseButton from "../ui/ChooseButton";
 const TelevisionPrices = () => {
 	return (
 		<section class="pricing-container">
@@ -30,11 +31,7 @@ const TelevisionPrices = () => {
 						</ul>
 					</div>
 					<div className="pricing-card__btn">
-						<div className="button">
-							<a href="#" className="cta-btn">
-								Chọn gói này
-							</a>
-						</div>
+						<ChooseButton />
 					</div>
 				</div>
 
@@ -68,11 +65,7 @@ const TelevisionPrices = () => {
 						</ul>
 					</div>
 					<div className="pricing-card__btn">
-						<div className="button">
-							<a href="#" className="cta-btn">
-								Chọn gói này
-							</a>
-						</div>
+						<ChooseButton />
 					</div>
 				</div>
 
@@ -107,11 +100,7 @@ const TelevisionPrices = () => {
 						</ul>
 					</div>
 					<div className="pricing-card__btn">
-						<div className="button">
-							<a href="#" className="cta-btn">
-								Chọn gói này
-							</a>
-						</div>
+						<ChooseButton />
 					</div>
 				</div>
 			</div>
