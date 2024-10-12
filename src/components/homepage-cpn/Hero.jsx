@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import ContactButton from "../ui/ContactButton";
 import VideoTVC from "../ui/VideoTVC";
+import { ReactComponent as Icon1 } from "../../assets/images/icon1.svg";
+import { ReactComponent as Icon2 } from "../../assets/images/icon2.svg";
+import { ReactComponent as Icon3 } from "../../assets/images/icon3.svg";
+import { ReactComponent as Icon4 } from "../../assets/images/icon4.svg";
 
 const Hero = () => {
 	useEffect(() => {
@@ -39,10 +43,18 @@ const Hero = () => {
 	}, []);
 	return (
 		<section className="hero">
-			<div className="icon-1"></div>
-			<div className="icon-2"></div>
-			<div className="icon-3"></div>
-			<div className="icon-4"></div>
+			<div className="icon-1 home__icon">
+				<Icon1 />
+			</div>
+			<div className="icon-2 home__icon">
+				<Icon2 />
+			</div>
+			<div className="icon-3 home__icon">
+				<Icon3 />
+			</div>
+			<div className="icon-4 home__icon">
+				<Icon4 />
+			</div>
 
 			<div className="text">
 				<div className="subtext">

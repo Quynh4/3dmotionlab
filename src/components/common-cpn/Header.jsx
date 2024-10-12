@@ -2,8 +2,11 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
 import expandMore from "../../assets/images/expand_more.svg";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
+	const location = useLocation();
+
 	return (
 		<nav className="navbar">
 			<div className="logo">
@@ -13,46 +16,36 @@ function Header() {
 			</div>
 			<nav>
 				<ul className="menu">
-					<li className="menu-item">
-						<a href="/dich-vu">
+					<li
+						className={`menu-item ${
+							location.pathname === "/dich-vu" ? "active" : ""
+						}`}
+					>
+						<Link to="/dich-vu">
 							Dịch vụ
 							<span className="dropdown-arrow">
 								<img src={expandMore} alt="Expand" />
 							</span>
-						</a>
-						{/* <ul className="dropdown">
-							<li>
-								<a href="#">Dịch vụ 1</a>
-							</li>
-							<li>
-								<a href="#">Dịch vụ 2</a>
-							</li>
-							<li>
-								<a href="#">Dịch vụ 3</a>
-							</li>
-						</ul> */}
+						</Link>
 					</li>
-					<li className="menu-item">
-						<a href="/bao-gia">
+					<li
+						className={`menu-item ${
+							location.pathname === "/bao-gia" ? "active" : ""
+						}`}
+					>
+						<Link to="/bao-gia">
 							Báo giá
 							<span className="dropdown-arrow">
 								<img src={expandMore} alt="Expand" />
 							</span>
-						</a>
-						{/* <ul className="dropdown">
-							<li>
-								<a href="#">Gói 1</a>
-							</li>
-							<li>
-								<a href="#">Gói 2</a>
-							</li>
-							<li>
-								<a href="#">Gói 3</a>
-							</li>
-						</ul> */}
+						</Link>
 					</li>
-					<li className="menu-item">
-						<a href="/ve-chung-toi">Về chúng tôi</a>
+					<li
+						className={`menu-item ${
+							location.pathname === "/ve-chung-toi" ? "active" : ""
+						}`}
+					>
+						<Link to="/ve-chung-toi">Về chúng tôi</Link>
 					</li>
 				</ul>
 			</nav>

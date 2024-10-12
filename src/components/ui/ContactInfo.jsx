@@ -8,15 +8,15 @@ const ContactInfo = () => {
 			<div className="logo">
 				<img src={logo} alt="3D Motion Lab" />
 			</div>
-			<div className="contact-info__text">
+			<div className="contact-info">
 				<p>
 					<strong>Thông tin liên hệ:</strong>
 				</p>
 				<div className="contact-info__item">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						width="17"
-						height="19"
+						width="40"
+						height="60"
 						viewBox="0 0 17 19"
 						fill="none"
 					>

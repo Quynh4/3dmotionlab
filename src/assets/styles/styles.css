@@ -147,7 +147,8 @@ nav.fill ul li.menu-item {
 	padding: 0 12px;
 }
 nav.navbar ul li.menu-item a:hover,
-nav.fill ul li.menu-item a:hover {
+nav.fill ul li.menu-item a:hover,
+.menu-item.active a {
 	font-weight: 800;
 }
 
@@ -255,15 +256,38 @@ nav.fill ul li.menu-item {
 
 .hero {
 	padding: 7rem;
+	position: relative;
 }
 
-.hero .frame-1 {
-	margin-left: auto;
-	margin-right: 10px; /* Điều chỉnh margin để đúng vị trí */
-	width: 68px;
-	height: 68px;
-	background: url("../images/icon-3d.svg");
+.home__icon:hover {
+	transform: scale(1.3);
+	rotate: 360deg;
+	transition: all 0.3s;
 }
+.icon-1 {
+	position: absolute;
+	top: 77px;
+	left: 239px;
+}
+
+.icon-2 {
+	position: absolute;
+	top: 28rem;
+	left: 20rem;
+}
+
+.icon-3 {
+	position: absolute;
+	top: 1rem;
+	right: 20rem;
+}
+
+.icon-4 {
+	position: absolute;
+	top: 20rem;
+	right: 9rem;
+}
+
 .text {
 	display: flex;
 	flex-direction: column;
@@ -491,10 +515,14 @@ nav.fill ul li.menu-item {
 
 .small-img {
 	position: absolute;
-	top: 11rem;
+	top: 13rem;
 	left: 3rem;
 	background: #9da6f2;
-	z-index: 111;
+	border-radius: 12px;
+	right: -61px;
+}
+
+.small-img img {
 	border-radius: 12px;
 }
 
@@ -540,6 +568,10 @@ nav.fill ul li.menu-item {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+	text-align: left;
+}
+
+.service__text h2 {
 	text-align: left;
 }
 
@@ -605,16 +637,21 @@ nav.fill ul li.menu-item {
 	font-size: 18px;
 }
 
-.faq-answer {
-	display: none;
-	margin: 10px 0;
+.faq-answer.show {
+	margin-top: 10px;
+	padding: 10px;
 	padding-right: 2rem;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	margin: 10px 0;
 }
 
 .faq ul {
 	padding-left: 1.5rem;
+	text-align: left;
 }
-.faq li {
+.faq li,
+.faq p {
 	font-family: "BT Beau Sans";
 	color: #afafaf;
 	font-size: 13px;
@@ -716,7 +753,8 @@ nav.fill ul li.menu-item {
 	justify-content: center;
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.menu-item.active a {
 	color: orange;
 }
 

@@ -34,7 +34,7 @@ const Services = () => {
 					<div className="service__btn-group">
 						<div className="button">
 							<a href="#" className="cta-btn">
-								xem dự án
+								Xem dự án
 							</a>
 						</div>
 						<ContactButton />
@@ -62,7 +62,7 @@ const Services = () => {
 					<div className="service__btn-group">
 						<div className="button">
 							<a href="#" className="cta-btn">
-								xem dự án
+								Xem dự án
 							</a>
 						</div>
 						<ContactButton />
@@ -98,7 +98,7 @@ const Services = () => {
 					<div className="service__btn-group">
 						<div className="button">
 							<a href="#" className="cta-btn">
-								xem dự án
+								Xem dự án
 							</a>
 						</div>
 						<ContactButton />
