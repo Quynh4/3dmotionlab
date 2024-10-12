@@ -8,10 +8,10 @@ import explore from "../assets/images/explore.png";
 const Services = () => {
 	return (
 		<>
-			<section class="services">
-				<div class="text">
-					<div class="subtext">
-						<div class="icon">
+			<section className="services">
+				<div className="text">
+					<div className="subtext">
+						<div className="icon">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="19"
@@ -34,11 +34,11 @@ const Services = () => {
 					</h2>
 				</div>
 
-				<div class="service-grid">
-					<div class="column">
-						<div class="service-item" style={{ height: "340px" }}>
+				<div className="service-grid">
+					<div className="column">
+						<div className="service-item" style={{ height: "340px" }}>
 							<img src={tvc} alt="Television Commercial" />
-							<div class="text-1">
+							<div className="text-1">
 								<h3>Television Commercial (TVC)</h3>
 								<p>
 									Phim được phát hành trên các phương tiện truyền thông đại
@@ -46,8 +46,8 @@ const Services = () => {
 								</p>
 							</div>
 						</div>
-						<div class="service-item" style={{ height: "441px" }}>
-							<div class="text-3">
+						<div className="service-item" style={{ height: "441px" }}>
+							<div className="text-3">
 								<h3>3D Website</h3>
 								<p>
 									Website được thiết kế theo phong cách 3D hiện đại, mang lại
@@ -55,16 +55,16 @@ const Services = () => {
 									động và thu hút hơn
 								</p>
 							</div>
-							<div class="small-img">
+							<div className="small-img">
 								<img src={img3dwebsite} alt="3D Website" />
 							</div>
 						</div>
 					</div>
 
-					<div class="column">
-						<div class="service-item" style={{ height: "564px" }}>
+					<div className="column">
+						<div className="service-item" style={{ height: "564px" }}>
 							<img src={vr360} alt="VR360 Virtual Tour" />
-							<div class="text-2">
+							<div className="text-2">
 								<h3>VR360 Virtual Tour</h3>
 								<p>
 									VR360 Tour được tạo nên bằng cách kết hợp các hình ảnh 360 độ,
@@ -73,7 +73,7 @@ const Services = () => {
 								</p>
 							</div>
 						</div>
-						<div class="service-item" style={{ height: "217px" }}>
+						<div className="service-item" style={{ height: "217px" }}>
 							<img src={explore} alt="" />
 						</div>
 					</div>

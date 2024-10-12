@@ -38,15 +38,15 @@ const Hero = () => {
 		});
 	}, []);
 	return (
-		<section class="hero">
-			<div class="icon-1"></div>
-			<div class="icon-2"></div>
-			<div class="icon-3"></div>
-			<div class="icon-4"></div>
+		<section className="hero">
+			<div className="icon-1"></div>
+			<div className="icon-2"></div>
+			<div className="icon-3"></div>
+			<div className="icon-4"></div>
 
-			<div class="text">
-				<div class="subtext">
-					<div class="icon">
+			<div className="text">
+				<div className="subtext">
+					<div className="icon">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="18"
@@ -60,24 +60,24 @@ const Hero = () => {
 							/>
 						</svg>
 					</div>
-					<span class="award-winning-finance">
+					<span className="award-winning-finance">
 						Award-Winning Finance Solutions
 					</span>
 				</div>
 				<h1>Giải Pháp Sáng Tạo</h1>
 				<h2>Kết nối tương lai</h2>
 
-				<p class="description">
+				<p className="description">
 					Kết hợp giữa nghệ thuật và công nghệ, 3D Motion Lab mang đến cho bạn
 					những sản phẩm 3D sống động, giúp doanh nghiệp tạo kết nối cảm xúc với
 					khách hàng.
 				</p>
 
-				<div class="contact-now">
-					<a href="#" class="cta-btn">
+				<div className="contact-now">
+					<a href="#" className="cta-btn">
 						Liên hệ ngay
 					</a>
-					<div class="icon">
+					<div className="icon">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							width="17"
@@ -105,9 +105,9 @@ const Hero = () => {
 					</div>
 				</div>
 
-				<div class="custom-video_container">
+				<div className="custom-video_container">
 					<video
-						class="custom-video_video"
+						className="custom-video_video"
 						width="100%"
 						height="auto"
 						poster={tvc}
@@ -115,7 +115,7 @@ const Hero = () => {
 						<source src={video} type="video/mp4" />
 						Your browser does not support the video tag.
 					</video>
-					<div class="custom-video_control"></div>
+					<div className="custom-video_control"></div>
 				</div>
 			</div>
 		</section>

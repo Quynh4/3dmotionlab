@@ -18,8 +18,8 @@ const FAQ = () => {
 				if (item.classList.contains("open")) {
 					toggleBtn.innerHTML = `
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-              <g clip-path="url(#clip0_1_753)">
-                <path d="M4.25 12H20.75" stroke="#006AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <g clipPath="url(#clip0_1_753)">
+                <path d="M4.25 12H20.75" stroke="#006AFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
                 <clipPath id="clip0_1_753">
@@ -31,9 +31,9 @@ const FAQ = () => {
 				} else {
 					toggleBtn.innerHTML = `
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-              <g clip-path="url(#clip0_1_768)">
-                <path d="M4.25 12H20.75" stroke="#006AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12.5 3.75V20.25" stroke="#006AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <g clipPath="url(#clip0_1_768)">
+                <path d="M4.25 12H20.75" stroke="#006AFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M12.5 3.75V20.25" stroke="#006AFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </g>
               <defs>
                 <clipPath id="clip0_1_768">
@@ -49,10 +49,10 @@ const FAQ = () => {
 
 	return (
 		<>
-			<section class="faq">
-				<div class="text">
-					<div class="subtext">
-						<div class="icon">
+			<section className="faq">
+				<div className="text">
+					<div className="subtext">
+						<div className="icon">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="19"
@@ -72,11 +72,11 @@ const FAQ = () => {
 					<h2>Những câu hỏi thường gặp</h2>
 				</div>
 
-				<div class="faq-container">
-					<div class="faq-item">
-						<div class="faq-question">
+				<div className="faq-container">
+					<div className="faq-item">
+						<div className="faq-question">
 							<span>Quy trình làm việc của 3D Motion Lab như thế nào?</span>
-							<span class="toggle-btn">
+							<span className="toggle-btn">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="25"
@@ -84,20 +84,20 @@ const FAQ = () => {
 									viewBox="0 0 25 24"
 									fill="none"
 								>
-									<g clip-path="url(#clip0_1_760)">
+									<g clipPath="url(#clip0_1_760)">
 										<path
 											d="M4.25 12H20.75"
 											stroke="#006AFF"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 										/>
 										<path
 											d="M12.5 3.75V20.25"
 											stroke="#006AFF"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 										/>
 									</g>
 									<defs>
@@ -113,34 +113,32 @@ const FAQ = () => {
 								</svg>
 							</span>
 						</div>
-						<div class="faq-answer">
-							<p>
-								Để đạt được kết quả tối ưu nhất khi làm việc, chúng tôi luôn
-								tuân thủ chặt chẽ quy trình làm việc sau đây:
-								<ul>
-									<li>
-										Tiếp nhận thông tin: Thông nhất về dữ liệu, yêu cầu công
-										việc từ phía khách hàng, đưa ra các tư vấn về giải pháp,
-									</li>
-									<li>
-										Bắt đầu quy trình sản xuất: Sản xuất và thiết kế theo yêu
-										cầu của khách hàng, thường xuyên trao đổi với khách hàng để
-										không lạc hướng.
-									</li>
-									<li>Kiểm thử: Kiểm thử, sửa lỗi nếu có trước khi bàn giao</li>
-									<li>Đóng gói và bàn giao sản phẩm</li>
-									<li>Nghiệm thu</li>
-								</ul>
-							</p>
+						<div className="faq-answer">
+							Để đạt được kết quả tối ưu nhất khi làm việc, chúng tôi luôn tuân
+							thủ chặt chẽ quy trình làm việc sau đây:
+							<ul>
+								<li>
+									Tiếp nhận thông tin: Thông nhất về dữ liệu, yêu cầu công việc
+									từ phía khách hàng, đưa ra các tư vấn về giải pháp,
+								</li>
+								<li>
+									Bắt đầu quy trình sản xuất: Sản xuất và thiết kế theo yêu cầu
+									của khách hàng, thường xuyên trao đổi với khách hàng để không
+									lạc hướng.
+								</li>
+								<li>Kiểm thử: Kiểm thử, sửa lỗi nếu có trước khi bàn giao</li>
+								<li>Đóng gói và bàn giao sản phẩm</li>
+								<li>Nghiệm thu</li>
+							</ul>
 						</div>
 					</div>
 
-					<div class="faq-item">
-						<div class="faq-question">
+					<div className="faq-item">
+						<div className="faq-question">
 							<span>
 								Thời gian hoàn thành một dự án của "3D Motion Lab" là bao lâu?
 							</span>
-							<span class="toggle-btn">
+							<span className="toggle-btn">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="25"
@@ -148,20 +146,20 @@ const FAQ = () => {
 									viewBox="0 0 25 24"
 									fill="none"
 								>
-									<g clip-path="url(#clip0_1_760)">
+									<g clipPath="url(#clip0_1_760)">
 										<path
 											d="M4.25 12H20.75"
 											stroke="#006AFF"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 										/>
 										<path
 											d="M12.5 3.75V20.25"
 											stroke="#006AFF"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 										/>
 									</g>
 									<defs>
@@ -177,7 +175,7 @@ const FAQ = () => {
 								</svg>
 							</span>
 						</div>
-						<div class="faq-answer">
+						<div className="faq-answer">
 							<p>
 								Thời gian hoàn thành một dự án còn phụ thuộc vào quy mô, độ phức
 								tạp của dự án và và sự tương tác, phản hồi giữa hai bên trong
@@ -188,12 +186,12 @@ const FAQ = () => {
 						</div>
 					</div>
 
-					<div class="faq-item">
-						<div class="faq-question">
+					<div className="faq-item">
+						<div className="faq-question">
 							<span>
 								Chi phí cho các dịch vụ của 3D Motion Lab là bao nhiêu?
 							</span>
-							<span class="toggle-btn">
+							<span className="toggle-btn">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="25"
@@ -201,20 +199,20 @@ const FAQ = () => {
 									viewBox="0 0 25 24"
 									fill="none"
 								>
-									<g clip-path="url(#clip0_1_760)">
+									<g clipPath="url(#clip0_1_760)">
 										<path
 											d="M4.25 12H20.75"
 											stroke="#006AFF"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 										/>
 										<path
 											d="M12.5 3.75V20.25"
 											stroke="#006AFF"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 										/>
 									</g>
 									<defs>
@@ -230,7 +228,7 @@ const FAQ = () => {
 								</svg>
 							</span>
 						</div>
-						<div class="faq-answer">
+						<div className="faq-answer">
 							<p>
 								Chi phí cho các dịch vụ tại 3D Motion Lab sẽ thay đổi tùy thuộc
 								vào nhiều yếu tố khác nhau, bao gồm quy mô, mức độ phức tạp của
@@ -242,13 +240,13 @@ const FAQ = () => {
 						</div>
 					</div>
 
-					<div class="faq-item">
-						<div class="faq-question">
+					<div className="faq-item">
+						<div className="faq-question">
 							<span>
 								3D Motion Lab có hỗ trợ khách hàng sau khi hoàn thành dự án
 								không?
 							</span>
-							<span class="toggle-btn">
+							<span className="toggle-btn">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="25"
@@ -256,20 +254,20 @@ const FAQ = () => {
 									viewBox="0 0 25 24"
 									fill="none"
 								>
-									<g clip-path="url(#clip0_1_760)">
+									<g clipPath="url(#clip0_1_760)">
 										<path
 											d="M4.25 12H20.75"
 											stroke="#006AFF"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 										/>
 										<path
 											d="M12.5 3.75V20.25"
 											stroke="#006AFF"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 										/>
 									</g>
 									<defs>
@@ -285,7 +283,7 @@ const FAQ = () => {
 								</svg>
 							</span>
 						</div>
-						<div class="faq-answer">
+						<div className="faq-answer">
 							<p>
 								Có. Chúng tôi cam kết cung cấp dịch vụ hậu mãi và hỗ trợ khách
 								hàng sau khi dự án hoàn thành để đảm bảo sản phẩm hoạt động ổn
@@ -294,13 +292,13 @@ const FAQ = () => {
 						</div>
 					</div>
 
-					<div class="faq-item">
-						<div class="faq-question">
+					<div className="faq-item">
+						<div className="faq-question">
 							<span>
 								Khách hàng nên chuẩn bị gì trước khi bắt đầu dự án với 3D Motion
 								Lab?
 							</span>
-							<span class="toggle-btn">
+							<span className="toggle-btn">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="25"
@@ -308,20 +306,20 @@ const FAQ = () => {
 									viewBox="0 0 25 24"
 									fill="none"
 								>
-									<g clip-path="url(#clip0_1_760)">
+									<g clipPath="url(#clip0_1_760)">
 										<path
 											d="M4.25 12H20.75"
 											stroke="#006AFF"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 										/>
 										<path
 											d="M12.5 3.75V20.25"
 											stroke="#006AFF"
-											stroke-width="1.5"
-											stroke-linecap="round"
-											stroke-linejoin="round"
+											strokeWidth="1.5"
+											strokeLinecap="round"
+											strokeLinejoin="round"
 										/>
 									</g>
 									<defs>
@@ -337,7 +335,7 @@ const FAQ = () => {
 								</svg>
 							</span>
 						</div>
-						<div class="faq-answer">
+						<div className="faq-answer">
 							<p>
 								Để đảm bảo quá trình hợp tác diễn ra thuận lợi và đạt kết quả
 								tốt nhất, khách hàng nên chuẩn bị ý tưởng, một số tài liệu và

@@ -1,13 +1,15 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import testimonial_img from "../assets/images/testimonial-img.png";
 const Testimonial = () => {
 	return (
 		<>
 			{" "}
-			<section class="testimonial">
-				<div class="text">
-					<div class="subtext">
-						<div class="icon">
+			<section className="testimonial">
+				<div className="text">
+					<div className="subtext">
+						<div className="icon">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="19"
@@ -28,11 +30,11 @@ const Testimonial = () => {
 						Elevate Your Marketplace Experience:
 						<br /> Discover Our Unique Features
 					</h2>
-					<div class="testimonial-grid">
-						<div class="column">
+					<div className="testimonial-grid">
+						<div className="column">
 							<img src={testimonial_img} />
 						</div>
-						<div class="column">
+						<div className="column">
 							<h3>
 								Streamlines our financial management process and saves us
 								valuable time.
