@@ -5,7 +5,7 @@ import expandMore from "../../assets/images/expand_more.svg";
 
 function Header() {
 	return (
-		<div className="navbar">
+		<nav className="navbar">
 			<div className="logo">
 				<img src={logo} alt="3D Motion Lab" />
 			</div>
@@ -18,7 +18,7 @@ function Header() {
 								<img src={expandMore} alt="Expand" />
 							</span>
 						</a>
-						<ul className="dropdown">
+						{/* <ul className="dropdown">
 							<li>
 								<a href="#">Dịch vụ 1</a>
 							</li>
@@ -28,7 +28,7 @@ function Header() {
 							<li>
 								<a href="#">Dịch vụ 3</a>
 							</li>
-						</ul>
+						</ul> */}
 					</li>
 					<li className="menu-item">
 						<a href="#">
@@ -37,7 +37,7 @@ function Header() {
 								<img src={expandMore} alt="Expand" />
 							</span>
 						</a>
-						<ul className="dropdown">
+						{/* <ul className="dropdown">
 							<li>
 								<a href="#">Gói 1</a>
 							</li>
@@ -47,14 +47,14 @@ function Header() {
 							<li>
 								<a href="#">Gói 3</a>
 							</li>
-						</ul>
+						</ul> */}
 					</li>
 					<li className="menu-item">
 						<a href="#">Về chúng tôi</a>
 					</li>
 				</ul>
 			</nav>
-		</div>
+		</nav>
 	);
 }
 

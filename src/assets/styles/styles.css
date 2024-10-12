@@ -140,6 +140,41 @@ p a {
 	z-index: 500;
 }
 
+/* ---------------- stroke ---------------- */
+nav.navbar ul li.menu-item,
+nav.fill ul li.menu-item {
+	position: relative;
+	padding: 0 12px;
+}
+nav.navbar ul li.menu-item a:hover,
+nav.fill ul li.menu-item a:hover {
+	font-weight: 800;
+}
+
+nav.navbar ul li.menu-item:after,
+nav.fill ul li.menu-item:after {
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	right: 0;
+	width: 0;
+	content: "";
+	background: blue;
+	height: 2px;
+	transition: width 0.3s ease-in-out;
+}
+
+nav.navbar ul li.menu-item:hover:after,
+nav.fill ul li.menu-item:hover:after {
+	width: 110%;
+}
+
+nav.fill ul li.menu-item {
+	transition: all 0.3s ease-in-out;
+}
+
+/* ---------------- stroke ---------------- */
+
 .navbar .logo {
 	margin-left: 17rem;
 }
@@ -164,10 +199,6 @@ p a {
 	text-decoration: none;
 	display: flex;
 	align-items: center;
-}
-
-.menu-item a:hover {
-	color: #f0a500;
 }
 
 .dropdown-arrow {
