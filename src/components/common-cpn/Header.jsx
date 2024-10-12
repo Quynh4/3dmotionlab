@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import logo from "../assets/images/logo.png";
-import expandMore from "../assets/images/expand_more.svg";
+import logo from "../../assets/images/logo.png";
+import expandMore from "../../assets/images/expand_more.svg";
+
 function Header() {
 	return (
 		<div className="navbar">

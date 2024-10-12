@@ -1,9 +1,9 @@
 import React from "react";
 
-import tvc from "../assets/images/tvc.png";
-import img3dwebsite from "../assets/images/img3dwebsite.png";
-import vr360 from "../assets/images/vr360.png";
-import explore from "../assets/images/explore.png";
+import tvc from "../../assets/images/tvc.png";
+import img3dwebsite from "../../assets/images/img3dwebsite.png";
+import vr360 from "../../assets/images/vr360.png";
+import explore from "../../assets/images/explore.png";
 
 const Services = () => {
 	return (

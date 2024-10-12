@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Services from "../components/Services";
-import Testimonial from "../components/Testimonial";
-import FAQ from "../components/FAQ";
+import Hero from "../components/homepage-cpn/Hero";
+import Services from "../components/homepage-cpn/Services";
+import Testimonial from "../components/homepage-cpn/Testimonial";
+import FAQ from "../components/common-cpn/FAQ";
 
-const Home = () => {
+const HomePage = () => {
 	return (
 		<div className="container">
 			<Hero />
@@ -15,4 +15,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default HomePage;

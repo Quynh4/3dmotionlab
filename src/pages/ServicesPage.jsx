@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../components/pages-cpn/home-cpn/Hero";
-import FAQ from "../components/pages-cpn/FAQ";
+import Hero from "../components/servicespage-cpn/Hero";
+import FAQ from "../components/common-cpn/FAQ";
 
-const Home = () => {
+const ServicesPage = () => {
 	return (
 		<div className="container">
 			<Hero />
@@ -11,4 +11,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default ServicesPage;

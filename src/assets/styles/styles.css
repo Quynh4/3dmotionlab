@@ -154,7 +154,6 @@ p a {
 .menu-item {
 	display: flex;
 	align-items: center;
-	position: relative;
 }
 
 .menu-item a {
@@ -212,8 +211,8 @@ p a {
 	margin-left: auto;
 	width: 1px;
 	height: 84px;
-	background: url(../images/9d648666-e4ea-464e-b36e-5b3fae3c2489.png)
-		no-repeat center;
+	background: url(../images/9d648666-e4ea-464e-b36e-5b3fae3c2489.png) no-repeat
+		center;
 	background-size: cover;
 } */
 
@@ -227,20 +226,17 @@ p a {
 
 .hero .frame-1 {
 	margin-left: auto;
-	margin-right: 10px;
+	margin-right: 10px; /* Điều chỉnh margin để đúng vị trí */
 	width: 68px;
 	height: 68px;
 	background: url("../images/icon-3d.svg");
 }
-
 .text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	gap: 1.5rem;
-	position: relative;
-	top: 2rem;
+	gap: 1rem;
 }
 
 .text h1,
@@ -248,7 +244,6 @@ p a {
 	text-align: center;
 	font-weight: 700;
 	background: linear-gradient(180deg, #ffffff, #bababa);
-	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import tvc from "../assets/images/tvc.png";
-import video from "../assets/videos/video.mp4";
-import ContactButton from "../../common/ContactButton";
+import ContactButton from "../ui/ContactButton";
+import VideoTVC from "../ui/VideoTVC";
 
 const Hero = () => {
 	useEffect(() => {
@@ -76,18 +75,7 @@ const Hero = () => {
 
 				<ContactButton />
 
-				<div className="custom-video_container">
-					<video
-						className="custom-video_video"
-						width="100%"
-						height="auto"
-						poster={tvc}
-					>
-						<source src={video} type="video/mp4" />
-						Your browser does not support the video tag.
-					</video>
-					<div className="custom-video_control"></div>
-				</div>
+				<VideoTVC />
 			</div>
 		</section>
 	);

@@ -1,10 +1,10 @@
 import "./App.css";
-import "./assets/styles/style.css";
-import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import Header from "./components/common-cpn/Header";
+import Footer from "./components/common-cpn/Footer";
+import Home from "./pages/HomePage";
 import ServicesPage from "./pages/ServicesPage";
-import Header from "./components/Header";
+import "./assets/styles/styles.css";
 
 function App() {
 	return (
@@ -13,7 +13,7 @@ function App() {
 				<Header />
 				<div className="container">
 					<Routes>
-						<Route path="/" element={<HomePage />} />
+						<Route path="/" element={<Home />} />
 						<Route path="/dich-vu" element={<ServicesPage />} />
 					</Routes>
 				</div>
