@@ -1,6 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
+import tvc from "../assets/images/tvc.png";
+import video from "../assets/videos/video.mp4";
 
 const Hero = () => {
+	useEffect(() => {
+		const videos = document.querySelectorAll(".custom-video_video");
+
+		videos.forEach((video, i) => {
+			video.addEventListener("click", function () {
+				const controls = this.nextElementSibling;
+				if (controls.innerHTML === "►") {
+					controls.innerHTML = "||";
+					this.play();
+				} else {
+					this.pause();
+					controls.innerHTML = "►";
+				}
+			});
+
+			video.addEventListener("mouseover", function () {
+				const controls = this.nextElementSibling;
+				controls.style.display = "flex";
+			});
+
+			video.addEventListener("mouseout", function () {
+				const controls = this.nextElementSibling;
+				if (!this.paused) {
+					controls.style.display = "none";
+				}
+			});
+
+			video.addEventListener("ended", function () {
+				const controls = this.nextElementSibling;
+				controls.style.display = "flex";
+				controls.innerHTML = "►";
+			});
+		});
+	}, []);
 	return (
 		<section class="hero">
 			<div class="icon-1"></div>
@@ -74,9 +110,9 @@ const Hero = () => {
 						class="custom-video_video"
 						width="100%"
 						height="auto"
-						poster="../assets/images/tvc.png"
+						poster={tvc}
 					>
-						<source src="../assets/video/video.mp4" type="video/mp4" />
+						<source src={video} type="video/mp4" />
 						Your browser does not support the video tag.
 					</video>
 					<div class="custom-video_control"></div>
