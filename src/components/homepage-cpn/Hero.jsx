@@ -17,7 +17,7 @@ const Hero = () => {
 			<div className="icon-3 home__icon">
 				<Icon3 />
 			</div>
-			<div className="icon-4 ">
+			<div className="icon-4 home__icon">
 				<Icon4 />
 			</div>
 
