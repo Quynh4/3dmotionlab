@@ -2,7 +2,7 @@
 import React from "react";
 import logo from "../../assets/images/logo.png";
 import expandMore from "../../assets/images/expand_more.svg";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
 	const location = useLocation();
@@ -21,31 +21,31 @@ function Header() {
 							location.pathname === "/dich-vu" ? "active" : ""
 						}`}
 					>
-						<a href="/dich-vu">
+						<Link to="/dich-vu">
 							Dịch vụ
 							<span className="dropdown-arrow">
 								<img src={expandMore} alt="Expand" />
 							</span>
-						</a>
+						</Link>
 					</li>
 					<li
 						className={`menu-item ${
 							location.pathname === "/bao-gia" ? "active" : ""
 						}`}
 					>
-						<a href="/bao-gia">
+						<Link to="/bao-gia">
 							Báo giá
 							<span className="dropdown-arrow">
 								<img src={expandMore} alt="Expand" />
 							</span>
-						</a>
+						</Link>
 					</li>
 					<li
 						className={`menu-item ${
 							location.pathname === "/ve-chung-toi" ? "active" : ""
 						}`}
 					>
-						<a href="/ve-chung-toi">Về chúng tôi</a>
+						<Link to="/ve-chung-toi">Về chúng tôi</Link>
 					</li>
 				</ul>
 			</nav>
