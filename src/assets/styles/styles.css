@@ -456,6 +456,12 @@ nav.fill ul li.menu-item {
 	line-height: 4.9rem;
 }
 
+.service-item:hover {
+	transform: scale(1.05);
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
 .service-item .text-1 {
 	position: absolute;
 	color: white;

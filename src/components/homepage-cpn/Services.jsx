@@ -4,8 +4,16 @@ import tvc from "../../assets/images/tvc.png";
 import img3dwebsite from "../../assets/images/img3dwebsite.png";
 import vr360 from "../../assets/images/vr360.png";
 import explore from "../../assets/images/explore.png";
+import { useState } from "react";
+import FormModal from "../common-cpn/FormModal";
 
 const Services = () => {
+	const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+	const handleButtonClick = () => {
+		setIsPopupVisible(!isPopupVisible);
+	};
+
 	return (
 		<>
 			<section className="services service-grid">
@@ -36,7 +44,11 @@ const Services = () => {
 
 				<div className="service-grid">
 					<div className="column">
-						<div className="service-item" style={{ height: "340px" }}>
+						<div
+							className="service-item"
+							style={{ height: "340px" }}
+							onClick={handleButtonClick}
+						>
 							<img src={tvc} alt="Television Commercial" />
 							<div className="text-1">
 								<h3>Television Commercial(TVC)</h3>
@@ -46,7 +58,11 @@ const Services = () => {
 								</p>
 							</div>
 						</div>
-						<div className="service-item" style={{ height: "441px" }}>
+						<div
+							className="service-item"
+							style={{ height: "441px" }}
+							onClick={handleButtonClick}
+						>
 							<div className="text-3">
 								<h3>3D Website</h3>
 								<p>
@@ -62,7 +78,11 @@ const Services = () => {
 					</div>
 
 					<div className="column">
-						<div className="service-item" style={{ height: "564px" }}>
+						<div
+							className="service-item"
+							style={{ height: "564px" }}
+							onClick={handleButtonClick}
+						>
 							<img src={vr360} alt="VR360 Virtual Tour" />
 							<div className="text-2">
 								<h3>VR360 Virtual Tour</h3>
@@ -73,11 +93,16 @@ const Services = () => {
 								</p>
 							</div>
 						</div>
-						<div className="service-item" style={{ height: "217px" }}>
+						<div
+							className="service-item"
+							style={{ height: "217px" }}
+							onClick={handleButtonClick}
+						>
 							<img src={explore} alt="" />
 						</div>
 					</div>
 				</div>
+				{isPopupVisible && <FormModal onClose={handleButtonClick} />}
 			</section>
 		</>
 	);
