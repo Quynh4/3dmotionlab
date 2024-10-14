@@ -18,7 +18,9 @@ const Wesbsite3DPrices = () => {
 					<div className="text">
 						<h2>Gói tiêu chuẩn</h2>
 					</div>
-					<ContactButton />
+					<div className="package-content__button">
+						<ContactButton />
+					</div>
 				</div>
 				<h3>1. Thiết kế bối cảnh:</h3>
 				<p>Thiết kế bối cảnh và môi trường xung quanh bằng 3D</p>

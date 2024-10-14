@@ -10,11 +10,14 @@ const ChooseButton = () => {
 	};
 
 	return (
-		<div className="button">
-			<a href="#" className="cta-btn" onClick={handleButtonClick}>
+		<div className="button" onClick={handleButtonClick}>
+			<a href="#" className="cta-btn">
 				Chọn gói này
 			</a>
+
 			{isPopupVisible && <FormModal onClose={handleButtonClick} />}
+
+			{/* <FormModal isOpen={isPopupVisible} onClose={handleButtonClick} /> */}
 		</div>
 	);
 };

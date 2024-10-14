@@ -4,6 +4,7 @@ import ContactInfo from "../ui/ContactInfo";
 import { ReactComponent as ArrowIcon } from "../../assets/images/icon-arrow.svg";
 import contact from "../../assets/images/contact.png";
 import { ReactComponent as CloseIcon } from "../../assets/images/icon-close.svg";
+import ReactDOM from "react-dom";
 
 const FormModal = ({ onClose }) => {
 	const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ const FormModal = ({ onClose }) => {
 		onClose();
 	};
 
-	return (
+	return ReactDOM.createPortal(
 		<div className="modal-overlay" onClick={onClose}>
 			<div className="form-container" onClick={(e) => e.stopPropagation()}>
 				<div className="from__header">
@@ -168,7 +169,9 @@ const FormModal = ({ onClose }) => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>,
+
+		document.body
 	);
 };
 

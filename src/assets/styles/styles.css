@@ -457,7 +457,7 @@ nav.fill ul li.menu-item {
 }
 
 .service-item:hover {
-	transform: scale(1.05);
+	transform: scale(1.005);
 	transition: all 0.3s;
 	cursor: pointer;
 }
@@ -548,6 +548,30 @@ nav.fill ul li.menu-item {
 	width: 34rem;
 	overflow: hidden;
 	background-color: #010d71;
+	transition: all 0.3s ease-in-out;
+}
+
+.service-item::before {
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(
+		to top,
+		rgba(255, 255, 255, 1),
+		rgba(255, 255, 255, 0)
+	);
+	transition: height 0.3s ease-in-out;
+	padding: 2px;
+}
+
+.service-item:hover::before {
+	height: 50%;
+}
+
+.service-item:hover {
+	padding: 5px;
 }
 
 .service-item img {
@@ -666,8 +690,8 @@ nav.fill ul li.menu-item {
 .toggle-btn {
 	font-size: 24px;
 	color: #59c2ff;
-	font-weight: bold; /* Đậm hơn để nổi bật */
-	transition: color 0.3s; /* Thêm hiệu ứng chuyển màu */
+	font-weight: bold;
+	transition: color 0.3s;
 }
 
 .faq-item.open .toggle-btn {
@@ -724,10 +748,10 @@ nav.fill ul li.menu-item {
 .contact-info__item {
 	display: flex;
 	align-items: center;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
-.contact-info__item svg {
+.contact-info__item img {
 	margin-right: 1rem;
 }
 
@@ -1244,6 +1268,10 @@ button {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+}
+
+.form__description svg {
+	width: 45px;
 }
 
 .form-container {

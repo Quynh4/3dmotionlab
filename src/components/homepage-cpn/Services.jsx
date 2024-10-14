@@ -4,14 +4,13 @@ import tvc from "../../assets/images/tvc.png";
 import img3dwebsite from "../../assets/images/img3dwebsite.png";
 import vr360 from "../../assets/images/vr360.png";
 import explore from "../../assets/images/explore.png";
-import { useState } from "react";
-import FormModal from "../common-cpn/FormModal";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
-	const [isPopupVisible, setIsPopupVisible] = useState(false);
+	const navigate = useNavigate();
 
 	const handleButtonClick = () => {
-		setIsPopupVisible(!isPopupVisible);
+		navigate("/dich-vu");
 	};
 
 	return (
@@ -102,7 +101,6 @@ const Services = () => {
 						</div>
 					</div>
 				</div>
-				{isPopupVisible && <FormModal onClose={handleButtonClick} />}
 			</section>
 		</>
 	);

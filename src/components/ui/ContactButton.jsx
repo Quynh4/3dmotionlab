@@ -11,8 +11,8 @@ const ContactButton = () => {
 	};
 
 	return (
-		<div className="button">
-			<a href="#" className="cta-btn" onClick={handleButtonClick}>
+		<div className="button" onClick={handleButtonClick}>
+			<a href="#" className="cta-btn">
 				Liên hệ ngay
 			</a>
 			<div className="icon">
