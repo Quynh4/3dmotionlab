@@ -9,9 +9,7 @@ const Services = () => {
 	return (
 		<>
 			<section className="service__section">
-				<div className="service__video">
-					<VideoTVC />
-				</div>
+				<VideoTVC />
 				<div className="service__text">
 					<div className="subtext">
 						<div className="icon">
@@ -68,15 +66,11 @@ const Services = () => {
 						<ContactButton />
 					</div>
 				</div>
-				<div className="service__video">
-					<VideoTVC />
-				</div>
+				<VideoTVC />
 			</section>
 
 			<section className="service__section">
-				<div className="service__video">
-					<VideoTVC />
-				</div>
+				<VideoTVC />
 				<div className="service__text">
 					<div className="subtext">
 						<div className="icon">
