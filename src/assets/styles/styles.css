@@ -1245,6 +1245,7 @@ button {
 	flex-direction: column;
 	justify-content: space-around;
 }
+
 .form-container {
 	position: relative;
 	background: #000a6b;
