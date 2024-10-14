@@ -35,16 +35,14 @@ const Testimonial = () => {
 							<img src={testimonial_img} />
 						</div>
 						<div className="column">
-							<h3>
-								Streamlines our financial management process and saves us
-								valuable time.
-							</h3>
+							<h3>Labby - Người bạn đồng hành mới của 3D Motion Lab</h3>
 							<p>
-								“Using <a>Maney</a> has completely transformed the way we manage
-								our finances on our marketplace platform. The intuitive
-								dashboard makes it easy to track transactions and analyze our
-								performance in real-time. Plus, the support team is always there
-								to assist whenever we need help. Highly recommended!"
+								<a>Labby</a> là linh vật chính thức của 3D Motion Lab, biểu
+								tượng cho những giá trị cốt lõi như sáng tạo, đổi mới và tiên
+								phong trong lĩnh vực thiết kế 3D. <br />
+								<br />
+								Labby còn là người bạn đồng hành, giúp khách hàng khám phá những
+								sản phẩm 3D chất lượng nhất.
 							</p>
 						</div>
 					</div>
