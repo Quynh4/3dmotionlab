@@ -10,7 +10,7 @@ const ChooseButton = () => {
 	};
 
 	return (
-		<div className="button" onClick={handleButtonClick}>
+		<div className="choose-button" onClick={handleButtonClick}>
 			<a href="#" className="cta-btn">
 				Chọn gói này
 			</a>

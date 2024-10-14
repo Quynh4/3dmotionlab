@@ -405,9 +405,73 @@ nav.fill ul li.menu-item {
 	cursor: pointer;
 }
 
+.video-banner {
+	margin-top: 2rem;
+}
+
+/* ================= HEROPAGE END  =================  */
+
+/* =============== BUTTON START ============== */
+
+.choose-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 178px;
+	height: 60px;
+	padding: 18px 16px 18px 20px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 99px;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
 .button:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 }
+
+.pricing-card:hover .choose-button {
+	background-color: #000a6b;
+	display: flex;
+	justify-content: flex-start;
+	gap: 8px;
+	width: 166px;
+	height: 45px;
+	padding: 16px 20px 16px 20px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 99px;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	transform: scale(1.4);
+	align-items: center;
+}
+
+.pricing-card:hover .choose-button .cta-btn::after {
+	content: url("../images/icon-arrow.svg");
+	font-weight: 900;
+	position: absolute;
+	right: -30px;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+	background-color: #006aff;
+	border-radius: 40%;
+	width: 25px;
+	height: 20px;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.pricing-card:hover .choose-button .cta-btn::after {
+	opacity: 1;
+	right: 10px;
+}
+
+.pricing-card:hover .choose-button:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
 .button a {
 	text-decoration: none;
 }
@@ -425,7 +489,7 @@ nav.fill ul li.menu-item {
 	line-height: 24px;
 	text-align: right;
 	white-space: nowrap;
-	z-index: 70;
+	text-decoration: none;
 }
 
 .button .icon {
@@ -443,23 +507,14 @@ nav.fill ul li.menu-item {
 	border-radius: 99px;
 }
 
-.video-banner {
-	margin-top: 2rem;
-}
+/* =============== BUTTON END ============== */
 
-/* ================= HEROPAGE END  =================  */
 /* ================= SERVICE START  =================  */
 
 .services h2 {
 	font-size: 3.5rem;
 	padding: 3rem;
 	line-height: 4.9rem;
-}
-
-.service-item:hover {
-	transform: scale(1.005);
-	transition: all 0.3s;
-	cursor: pointer;
 }
 
 .service-item .text-1 {
@@ -548,10 +603,14 @@ nav.fill ul li.menu-item {
 	width: 34rem;
 	overflow: hidden;
 	background-color: #010d71;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-out;
 }
 
-.service-item::before {
+.imgNtext {
+	position: relative;
+	height: 100%;
+}
+/* .service-item::before {
 	position: absolute;
 	left: 0;
 	bottom: 2px;
@@ -564,14 +623,17 @@ nav.fill ul li.menu-item {
 	);
 	transition: height 0.3s ease-in-out;
 	padding: 2px;
-}
+} */
 
-.service-item:hover::before {
+/* .service-item:hover::before {
 	height: 50%;
-}
+} */
 
 .service-item:hover {
-	padding: 5px;
+	padding: 0 2px 3px 2px;
+	cursor: pointer;
+	transform: scale(1.01);
+	transition: all 0.3s;
 }
 
 .service-item img {
@@ -977,43 +1039,6 @@ nav.fill ul li.menu-item {
 	bottom: 0;
 	width: 100%;
 	justify-content: center;
-}
-
-.pricing-card .button .cta-btn:hover {
-	background-color: #000a6b;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 8px;
-	width: 178px;
-	height: 56px;
-	padding: 16px 20px 16px 20px;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 99px;
-	margin-top: 2rem;
-	margin-bottom: 3rem;
-	transform: scale(1.4);
-}
-
-.pricing-card .button .cta-btn::after {
-	content: url("../images/icon-arrow.svg");
-	font-weight: 900;
-	position: absolute;
-	right: -30px;
-	top: 50%;
-	transform: translateY(-50%);
-	opacity: 0;
-	background-color: #006aff;
-	border-radius: 40%;
-	width: 25px;
-	height: 20px;
-	text-align: center;
-	margin-left: 50px;
-}
-
-.pricing-card .button .cta-btn:hover::after {
-	opacity: 1;
-	right: 10px;
 }
 
 .premium button {

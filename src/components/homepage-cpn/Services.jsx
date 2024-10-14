@@ -48,13 +48,15 @@ const Services = () => {
 							style={{ height: "340px" }}
 							onClick={handleButtonClick}
 						>
-							<img src={tvc} alt="Television Commercial" />
-							<div className="text-1">
-								<h3>Television Commercial(TVC)</h3>
-								<p>
-									Phim được phát hành trên các phương tiện truyền thông đại
-									chúng quảng cáo sản phẩm hoặc dịch vụ.
-								</p>
+							<div className="imgNtext">
+								<img src={tvc} alt="Television Commercial" />
+								<div className="text-1">
+									<h3>Television Commercial(TVC)</h3>
+									<p>
+										Phim được phát hành trên các phương tiện truyền thông đại
+										chúng quảng cáo sản phẩm hoặc dịch vụ.
+									</p>
+								</div>
 							</div>
 						</div>
 						<div
@@ -82,14 +84,16 @@ const Services = () => {
 							style={{ height: "564px" }}
 							onClick={handleButtonClick}
 						>
-							<img src={vr360} alt="VR360 Virtual Tour" />
-							<div className="text-2">
-								<h3>VR360 Virtual Tour</h3>
-								<p>
-									VR360 Tour được tạo nên bằng cách kết hợp các hình ảnh 360 độ,
-									có thể là ảnh chụp từ thực tế hoặc được dựng từ các bản thiết
-									kế 3D.
-								</p>
+							<div className="imgNtext">
+								<img src={vr360} alt="VR360 Virtual Tour" />
+								<div className="text-2">
+									<h3>VR360 Virtual Tour</h3>
+									<p>
+										VR360 Tour được tạo nên bằng cách kết hợp các hình ảnh 360
+										độ, có thể là ảnh chụp từ thực tế hoặc được dựng từ các bản
+										thiết kế 3D.
+									</p>
+								</div>
 							</div>
 						</div>
 						<div
