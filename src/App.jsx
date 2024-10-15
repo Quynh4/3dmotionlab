@@ -7,10 +7,25 @@ import ServicesPage from "./pages/ServicesPage";
 import "./assets/styles/styles.css";
 import PricesPage from "./pages/PricesPage";
 import AboutPage from "./pages/AboutPage";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function App() {
+	const ScrollToTop = () => {
+		const { hash } = useLocation();
+
+		useEffect(() => {
+			if (!hash) {
+				window.scrollTo(0, 0);
+			}
+		}, [hash]);
+
+		return null;
+	};
+
 	return (
 		<Router>
+			<ScrollToTop />
 			<div className="App">
 				<Header />
 				<Routes>

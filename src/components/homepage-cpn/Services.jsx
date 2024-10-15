@@ -37,7 +37,7 @@ const Services = () => {
 
 				<div className="service-grid">
 					<div className="column">
-						<HashLink to="/dich-vu#tvc">
+						<HashLink to="/dich-vu#tvc" smooth>
 							<div className="service-item" style={{ height: "340px" }}>
 								<div className="imgNtext">
 									<img src={tvc} alt="Television Commercial" />
@@ -51,7 +51,7 @@ const Services = () => {
 								</div>
 							</div>
 						</HashLink>
-						<HashLink to="/dich-vu#3dwebsite">
+						<HashLink to="/dich-vu#3dwebsite" smooth>
 							<div className="service-item" style={{ height: "441px" }}>
 								<div className="text-3">
 									<h3>3D Website</h3>
@@ -69,7 +69,7 @@ const Services = () => {
 					</div>
 
 					<div className="column">
-						<HashLink to="/dich-vu#vr360">
+						<HashLink to="/dich-vu#vr360" smooth>
 							<div className="service-item" style={{ height: "564px" }}>
 								<div className="imgNtext">
 									<img src={vr360} alt="VR360 Virtual Tour" />
@@ -84,7 +84,7 @@ const Services = () => {
 								</div>
 							</div>
 						</HashLink>
-						<HashLink to="/dich-vu">
+						<HashLink to="/dich-vu#" smooth>
 							<div
 								className="service-item"
 								style={{ height: "217px" }}

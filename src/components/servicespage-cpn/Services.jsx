@@ -8,9 +8,9 @@ import ContactButton from "../ui/ContactButton";
 const Services = () => {
 	return (
 		<>
-			<section className="service__section">
+			<section className="service__section" id="tvc">
 				<VideoTVC />
-				<div className="service__text" id="tvc">
+				<div className="service__text">
 					<div className="subtext">
 						<div className="icon">
 							<CameraIcon />
