@@ -9,8 +9,9 @@ import { useNavigate } from "react-router-dom";
 const Services = () => {
 	const navigate = useNavigate();
 
-	const handleButtonClick = () => {
-		navigate("/dich-vu");
+	const handleButtonClick = (serviceId) => {
+		console.log(serviceId);
+		navigate(`/dich-vu#${serviceId}`); // Điều hướng ngay lập tức
 	};
 
 	return (
@@ -46,7 +47,7 @@ const Services = () => {
 						<div
 							className="service-item"
 							style={{ height: "340px" }}
-							onClick={handleButtonClick}
+							onClick={handleButtonClick("tvc")}
 						>
 							<div className="imgNtext">
 								<img src={tvc} alt="Television Commercial" />
@@ -62,7 +63,7 @@ const Services = () => {
 						<div
 							className="service-item"
 							style={{ height: "441px" }}
-							onClick={handleButtonClick}
+							onClick={handleButtonClick("3dwebsite")}
 						>
 							<div className="text-3">
 								<h3>3D Website</h3>
@@ -82,7 +83,7 @@ const Services = () => {
 						<div
 							className="service-item"
 							style={{ height: "564px" }}
-							onClick={handleButtonClick}
+							onClick={handleButtonClick("vr360")}
 						>
 							<div className="imgNtext">
 								<img src={vr360} alt="VR360 Virtual Tour" />
@@ -99,7 +100,7 @@ const Services = () => {
 						<div
 							className="service-item"
 							style={{ height: "217px" }}
-							onClick={handleButtonClick}
+							onClick={handleButtonClick("")}
 						>
 							<img src={explore} alt="" />
 						</div>
