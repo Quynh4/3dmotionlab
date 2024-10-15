@@ -10,7 +10,7 @@ const Services = () => {
 		<>
 			<section className="service__section">
 				<VideoTVC />
-				<div className="service__text">
+				<div className="service__text" id="tvc">
 					<div className="subtext">
 						<div className="icon">
 							<CameraIcon />
@@ -40,7 +40,7 @@ const Services = () => {
 				</div>
 			</section>
 
-			<section className="service__section">
+			<section className="service__section" id="3dwebsite">
 				<div className="service__text">
 					<div className="subtext">
 						<div className="icon">
@@ -69,7 +69,7 @@ const Services = () => {
 				<VideoTVC />
 			</section>
 
-			<section className="service__section">
+			<section className="service__section" id="vr360">
 				<VideoTVC />
 				<div className="service__text">
 					<div className="subtext">
