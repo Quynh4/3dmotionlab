@@ -4,15 +4,9 @@ import tvc from "../../assets/images/tvc.png";
 import img3dwebsite from "../../assets/images/img3dwebsite.png";
 import vr360 from "../../assets/images/vr360.png";
 import explore from "../../assets/images/explore.png";
-import { useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Services = () => {
-	const navigate = useNavigate();
-
-	const handleButtonClick = () => {
-		navigate("/dich-vu");
-	};
-
 	return (
 		<>
 			<section className="services service-grid">
@@ -43,66 +37,62 @@ const Services = () => {
 
 				<div className="service-grid">
 					<div className="column">
-						<div
-							className="service-item"
-							style={{ height: "340px" }}
-							onClick={handleButtonClick}
-						>
-							<div className="imgNtext">
-								<img src={tvc} alt="Television Commercial" />
-								<div className="text-1">
-									<h3>Television Commercial(TVC)</h3>
-									<p>
-										Phim được phát hành trên các phương tiện truyền thông đại
-										chúng quảng cáo sản phẩm hoặc dịch vụ.
-									</p>
+						<HashLink to="/dich-vu#tvc">
+							<div className="service-item" style={{ height: "340px" }}>
+								<div className="imgNtext">
+									<img src={tvc} alt="Television Commercial" />
+									<div className="text-1">
+										<h3>Television Commercial(TVC)</h3>
+										<p>
+											Phim được phát hành trên các phương tiện truyền thông đại
+											chúng quảng cáo sản phẩm hoặc dịch vụ.
+										</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div
-							className="service-item"
-							style={{ height: "441px" }}
-							onClick={handleButtonClick}
-						>
-							<div className="text-3">
-								<h3>3D Website</h3>
-								<p>
-									Website được thiết kế theo phong cách 3D hiện đại, mang lại
-									góc nhìn tối ưu cho người dùng, giúp trang web trở nên sống
-									động và thu hút hơn
-								</p>
+						</HashLink>
+						<HashLink to="/dich-vu#3dwebsite">
+							<div className="service-item" style={{ height: "441px" }}>
+								<div className="text-3">
+									<h3>3D Website</h3>
+									<p>
+										Website được thiết kế theo phong cách 3D hiện đại, mang lại
+										góc nhìn tối ưu cho người dùng, giúp trang web trở nên sống
+										động và thu hút hơn
+									</p>
+								</div>
+								<div className="small-img">
+									<img src={img3dwebsite} alt="3D Website" />
+								</div>
 							</div>
-							<div className="small-img">
-								<img src={img3dwebsite} alt="3D Website" />
-							</div>
-						</div>
+						</HashLink>
 					</div>
 
 					<div className="column">
-						<div
-							className="service-item"
-							style={{ height: "564px" }}
-							onClick={handleButtonClick}
-						>
-							<div className="imgNtext">
-								<img src={vr360} alt="VR360 Virtual Tour" />
-								<div className="text-2">
-									<h3>VR360 Virtual Tour</h3>
-									<p>
-										VR360 Tour được tạo nên bằng cách kết hợp các hình ảnh 360
-										độ, có thể là ảnh chụp từ thực tế hoặc được dựng từ các bản
-										thiết kế 3D.
-									</p>
+						<HashLink to="/dich-vu#vr360">
+							<div className="service-item" style={{ height: "564px" }}>
+								<div className="imgNtext">
+									<img src={vr360} alt="VR360 Virtual Tour" />
+									<div className="text-2">
+										<h3>VR360 Virtual Tour</h3>
+										<p>
+											VR360 Tour được tạo nên bằng cách kết hợp các hình ảnh 360
+											độ, có thể là ảnh chụp từ thực tế hoặc được dựng từ các
+											bản thiết kế 3D.
+										</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div
-							className="service-item"
-							style={{ height: "217px" }}
-							onClick={handleButtonClick}
-						>
-							<img src={explore} alt="" />
-						</div>
+						</HashLink>
+						<HashLink to="/dich-vu">
+							<div
+								className="service-item"
+								style={{ height: "217px" }}
+								// onClick={handleButtonClick("")}
+							>
+								<img src={explore} alt="" />
+							</div>
+						</HashLink>
 					</div>
 				</div>
 			</section>
