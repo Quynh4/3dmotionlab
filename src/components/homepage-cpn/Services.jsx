@@ -38,7 +38,7 @@ const Services = () => {
 				<div className="service-grid">
 					<div className="column">
 						<HashLink to="/dich-vu#tvc" smooth>
-							<div className="service-item" style={{ height: "340px" }}>
+							<div className="service-item tvc">
 								<div className="imgNtext">
 									<img src={tvc} alt="Television Commercial" />
 									<div className="text-1">
@@ -51,8 +51,8 @@ const Services = () => {
 								</div>
 							</div>
 						</HashLink>
-						<HashLink to="/dich-vu#3dwebsite" smooth>
-							<div className="service-item" style={{ height: "441px" }}>
+						<HashLink to="/dich-vu#web" smooth>
+							<div className="service-item web">
 								<div className="text-3">
 									<h3>3D Website</h3>
 									<p>
@@ -70,7 +70,7 @@ const Services = () => {
 
 					<div className="column">
 						<HashLink to="/dich-vu#vr360" smooth>
-							<div className="service-item" style={{ height: "564px" }}>
+							<div className="service-item vr">
 								<div className="imgNtext">
 									<img src={vr360} alt="VR360 Virtual Tour" />
 									<div className="text-2">
@@ -85,11 +85,7 @@ const Services = () => {
 							</div>
 						</HashLink>
 						<HashLink to="/dich-vu#" smooth>
-							<div
-								className="service-item"
-								style={{ height: "217px" }}
-								// onClick={handleButtonClick("")}
-							>
+							<div className="service-item explore">
 								<img src={explore} alt="" />
 							</div>
 						</HashLink>

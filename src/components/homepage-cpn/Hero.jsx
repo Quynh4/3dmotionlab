@@ -45,9 +45,9 @@ const Hero = () => {
 				<h2>Kết nối tương lai</h2>
 
 				<p className="description">
-					Kết hợp giữa nghệ thuật và công nghệ, 3D Motion Lab mang đến cho bạn
-					những sản phẩm 3D sống động, giúp doanh nghiệp tạo kết nối cảm xúc với
-					khách hàng.
+					3D Motion Lab mang đến những giải pháp số hóa tiên tiến và đáng tin
+					cậy luôn tập trung vào chất lượng và sáng tạo, giúp khách hàng đạt
+					được những bước tiến vượt bậc.
 				</p>
 
 				<ContactButton />

@@ -40,7 +40,7 @@ const Services = () => {
 				</div>
 			</section>
 
-			<section className="service__section" id="3dwebsite">
+			<section className="service__section" id="web">
 				<div className="service__text">
 					<div className="subtext">
 						<div className="icon">

@@ -1,11 +1,15 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import expandMore from "../../assets/images/expand_more.svg";
 import { NavLink, useLocation } from "react-router-dom";
 
 function Header() {
 	const location = useLocation();
+	const [menuActive, setMenuActive] = useState(false);
+
+	const toggleMenu = () => {
+		setMenuActive(!menuActive);
+	};
 
 	return (
 		<nav className="navbar">
@@ -13,9 +17,11 @@ function Header() {
 				<a href="/">
 					<img src={logo} alt="3D Motion Lab" />
 				</a>
+				<div className="hamburger" onClick={toggleMenu}></div>
 			</div>
-			<nav>
-				<ul className="menu">
+
+			<div className={`nav ${menuActive ? "active" : ""}`}>
+				<ul className={`menu ${menuActive ? "active" : ""}`}>
 					<li
 						className={`menu-item ${
 							location.pathname === "/dich-vu" ? "active" : ""
@@ -48,7 +54,7 @@ function Header() {
 						<NavLink to="/ve-chung-toi">Về chúng tôi</NavLink>
 					</li>
 				</ul>
-			</nav>
+			</div>
 		</nav>
 	);
 }

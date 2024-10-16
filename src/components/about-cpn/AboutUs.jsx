@@ -21,7 +21,7 @@ const AboutUs = () => {
 				</div>
 			</section>
 
-			<section class="about__section">
+			<section class="about__section" id="creative">
 				<div className="about__text">
 					<h3>
 						<div className="icon">

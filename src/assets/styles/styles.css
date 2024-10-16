@@ -12,6 +12,10 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.container {
+	display: flex;
+	flex-direction: column;
+}
 
 /* Regular */
 @font-face {
@@ -128,32 +132,31 @@ p a {
 
 .navbar {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-	width: 100vw;
-	height: 89px;
 	top: 0;
 	background: #000850;
 	border-top: 1px solid rgba(58, 100, 255, 0.15);
 	border-bottom: 1px solid rgba(58, 100, 255, 0.15);
 	position: sticky;
-	z-index: 500;
+	padding: 20px;
+	z-index: 1;
 }
 
 /* ---------------- stroke ---------------- */
-nav.navbar ul li.menu-item,
-nav.fill ul li.menu-item {
+.nav.navbar ul li.menu-item,
+.nav.fill ul li.menu-item {
 	position: relative;
 	padding: 0 12px;
 }
-nav.navbar ul li.menu-item a:hover,
-nav.fill ul li.menu-item a:hover,
+.nav.navbar ul li.menu-item a:hover,
+.nav.fill ul li.menu-item a:hover,
 .menu-item.active a {
 	font-weight: 800;
 }
 
-nav.navbar ul li.menu-item:after,
-nav.fill ul li.menu-item:after {
+.nav.navbar ul li.menu-item:after,
+.nav.fill ul li.menu-item:after {
 	position: absolute;
 	bottom: -10px;
 	left: 0;
@@ -165,26 +168,21 @@ nav.fill ul li.menu-item:after {
 	transition: width 0.3s ease-in-out;
 }
 
-nav.navbar ul li.menu-item:hover:after,
-nav.fill ul li.menu-item:hover:after {
+.nav.navbar ul li.menu-item:hover:after,
+.nav.fill ul li.menu-item:hover:after {
 	width: 110%;
 }
 
-nav.fill ul li.menu-item {
+.nav.fill ul li.menu-item {
 	transition: all 0.3s ease-in-out;
 }
 
 /* ---------------- stroke ---------------- */
 
-.navbar .logo {
-	margin-left: 17rem;
-}
-
 .menu {
 	display: flex;
 	align-items: center;
-	gap: 20px; /* Khoảng cách giữa các mục menu */
-	margin-right: 224px; /* Khoảng cách từ cạnh phải */
+	gap: 20px;
 	list-style: none;
 }
 
@@ -218,7 +216,6 @@ nav.fill ul li.menu-item {
 	padding: 10px 0;
 	list-style: none;
 	min-width: 150px;
-	z-index: 1;
 	border-radius: 4px;
 }
 
@@ -240,15 +237,6 @@ nav.fill ul li.menu-item {
 .menu-item:hover .dropdown {
 	display: block;
 }
-
-/* .vector {
-	margin-left: auto;
-	width: 1px;
-	height: 84px;
-	background: url(../images/9d648666-e4ea-464e-b36e-5b3fae3c2489.png) no-repeat
-		center;
-	background-size: cover;
-} */
 
 /* ================= NAVBAR END ================= */
 
@@ -296,6 +284,10 @@ nav.fill ul li.menu-item {
 	gap: 1rem;
 }
 
+.package-content .text {
+	text-wrap: nowrap;
+}
+
 .text h1,
 .text h2 {
 	text-align: center;
@@ -323,6 +315,7 @@ nav.fill ul li.menu-item {
 	font-weight: 400;
 	line-height: 24px;
 	margin-top: 1rem;
+	max-width: 700px;
 }
 
 .video-container {
@@ -335,7 +328,6 @@ nav.fill ul li.menu-item {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 1;
 	background: transparent;
 	border: none;
 	padding: 0;
@@ -387,7 +379,7 @@ nav.fill ul li.menu-item {
 .hero p {
 	margin-bottom: 2rem;
 	margin: 0 auto;
-	width: 704px;
+	/* width: 704px; */
 }
 
 .button {
@@ -503,7 +495,6 @@ nav.fill ul li.menu-item {
 	padding: 4px 9px 4px 9px;
 	background: #006aff;
 	border: 1px solid rgba(255, 255, 255, 0.2);
-	z-index: 71;
 	border-radius: 99px;
 }
 
@@ -571,7 +562,6 @@ nav.fill ul li.menu-item {
 	position: relative;
 	width: 435px;
 	margin: 32px 0 0 48px;
-	z-index: 108;
 }
 
 .small-img {
@@ -604,6 +594,27 @@ nav.fill ul li.menu-item {
 	overflow: hidden;
 	background-color: #010d71;
 	transition: all 0.3s ease-out;
+	color: white;
+}
+
+.service-item a {
+	text-decoration: none;
+}
+
+.service-item.tvc {
+	height: 340px;
+}
+.service-item.web {
+	height: 441px;
+}
+.service-item.web {
+	height: 441px;
+}
+.service-item.vr {
+	height: 564px;
+}
+.service-item.explore {
+	height: 217px;
 }
 
 .imgNtext {
@@ -655,7 +666,7 @@ nav.fill ul li.menu-item {
 } */
 .service__text {
 	position: relative;
-	width: 27rem;
+	max-width: 27rem;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -677,6 +688,7 @@ nav.fill ul li.menu-item {
 	text-align: left;
 	bottom: -2rem;
 }
+width: 15rem;
 /* ================= SERVICE END  =================  */
 /* ================= TESTIMONIAL START  =================  */
 .testimonial {
@@ -830,7 +842,6 @@ nav.fill ul li.menu-item {
 	flex-shrink: 0;
 	position: relative;
 	width: 281px;
-	z-index: 245;
 }
 
 .footer-links a {
@@ -867,24 +878,6 @@ nav.fill ul li.menu-item {
 	height: auto;
 }
 
-@media (max-width: 768px) {
-	.footer-content {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.contact-info__text,
-	.footer-links,
-	.social-icons {
-		margin: 10px 0;
-		text-align: center;
-	}
-
-	.social-icons {
-		justify-content: center;
-	}
-}
-
 /* ============================== PRICE START ============================== */
 
 .pricing-table {
@@ -896,7 +889,7 @@ nav.fill ul li.menu-item {
 
 .pricing-card {
 	background-color: #000a6b;
-	width: 25rem;
+	max-width: 25rem;
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 	transition: all 0.3s ease;
 	position: relative;
@@ -957,7 +950,6 @@ nav.fill ul li.menu-item {
 	white-space: nowrap;
 	letter-spacing: -0.64px;
 	background: linear-gradient(180deg, #ffffff, #787878);
-	z-index: 103;
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -1002,7 +994,6 @@ nav.fill ul li.menu-item {
 	text-align: left;
 	white-space: nowrap;
 	letter-spacing: -0.4px;
-	z-index: 69;
 }
 
 .pricing-card ul {
@@ -1079,7 +1070,7 @@ nav.fill ul li.menu-item {
 	flex-direction: column;
 	gap: 24px;
 	position: relative;
-	margin: 2rem 14rem;
+	margin: 2rem 13rem;
 	background: #000a6b;
 	padding: 3rem;
 }
@@ -1087,24 +1078,6 @@ nav.fill ul li.menu-item {
 .package-content__header {
 	display: flex;
 	gap: 40rem;
-}
-
-.package-content__header .button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 8px;
-	width: 178px;
-	height: 60px;
-	padding: 18px 16px 18px 20px;
-	border: 1px solid #00e6b3;
-	border-radius: 99px;
-	margin-top: 3rem;
-	margin-bottom: 2rem;
-	margin: 0;
-	transition: background-color 0.3s ease;
-	position: absolute;
-	right: 30px;
 }
 
 .package-content__header .button:hover {
@@ -1181,12 +1154,12 @@ nav.fill ul li.menu-item {
 }
 .about__img {
 	position: relative;
-	width: 45rem;
+	max-width: 45rem;
 	overflow: hidden;
 }
 .about__text {
 	position: relative;
-	width: 27rem;
+	max-width: 27rem;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -1280,7 +1253,6 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 1000;
 	align-items: flex-start;
 	overflow-y: auto;
 	padding-top: 3rem;
@@ -1455,4 +1427,140 @@ button {
 .play-pause-button:hover {
 	transform: scale(1.3);
 	transition: all 0.3s;
+}
+
+.pricing-container {
+	padding: 20px;
+}
+
+@media (max-width: 768px) {
+	.testimonial-grid,
+	.service-grid,
+	.service__section,
+	.pricing-table,
+	.about__section,
+	.about-us .text {
+		flex-direction: column;
+		height: auto;
+		padding: 20px;
+	}
+
+	.text h1,
+	.text h2 {
+		font-size: 30px;
+		line-height: 3rem;
+	}
+
+	.services h2 {
+		font-size: 18px;
+		padding: 0;
+		line-height: 1.9rem;
+	}
+
+	.text-3 {
+		width: auto;
+		margin-top: 16px;
+	}
+
+	.menu {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 5px;
+		margin-right: 0;
+	}
+
+	.icon-1,
+	.icon-2,
+	.icon-3,
+	.icon-4 {
+		display: none;
+	}
+
+	.menu-item a {
+		font-size: 12px;
+	}
+
+	.dropdown {
+		min-width: 100%;
+	}
+
+	.hero {
+		padding: 30px;
+	}
+
+	.service-item,
+	.custom-video_container {
+		width: auto;
+	}
+	.service-item.tvc {
+		height: 340px;
+	}
+	.service-item.web {
+		height: 369px;
+	}
+	.service-item.vr {
+		height: 564px;
+	}
+	.service-item.explore {
+		height: 138px;
+	}
+
+	.service__btn-group {
+		width: 15rem;
+	}
+
+	#web,
+	#creative {
+		flex-direction: column-reverse;
+	}
+
+	/* ---------------- about us ------------- */
+	.about-us {
+		position: none;
+		margin: 0;
+		height: auto;
+		overflow: visible;
+	}
+
+	.about-us .text {
+		background: #040c30;
+		display: flex;
+		width: 100%;
+		position: relative;
+	}
+
+	.about-us h3 {
+		width: auto;
+	}
+	/* =========================== */
+	.footer-content {
+		flex-direction: column;
+		align-items: center;
+	}
+	.faq-container {
+		padding: 0;
+	}
+
+	.faq-item {
+		padding: 10px;
+	}
+	.contact-info__text,
+	.footer-links,
+	.social-icons {
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	.social-icons {
+		justify-content: center;
+	}
+
+	/* ------------------- bao gia ------------------*/
+	.content,
+	.pricing-table {
+		margin: 0;
+	}
+	.package-content {
+		margin: 0;
+	}
 }
