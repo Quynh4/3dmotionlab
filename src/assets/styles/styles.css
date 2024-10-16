@@ -128,35 +128,37 @@ p a {
 	width: 18px;
 	height: 18px;
 }
+
 /* ================= NAVBAR START  ================= */
 
 .navbar {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+	width: 100vw;
+	height: 89px;
 	top: 0;
 	background: #000850;
 	border-top: 1px solid rgba(58, 100, 255, 0.15);
 	border-bottom: 1px solid rgba(58, 100, 255, 0.15);
 	position: sticky;
-	padding: 20px;
-	z-index: 1;
+	z-index: 500;
 }
 
 /* ---------------- stroke ---------------- */
-.nav.navbar ul li.menu-item,
-.nav.fill ul li.menu-item {
+nav.navbar ul li.menu-item,
+nav.fill ul li.menu-item {
 	position: relative;
 	padding: 0 12px;
 }
-.nav.navbar ul li.menu-item a:hover,
-.nav.fill ul li.menu-item a:hover,
+nav.navbar ul li.menu-item a:hover,
+nav.fill ul li.menu-item a:hover,
 .menu-item.active a {
 	font-weight: 800;
 }
 
-.nav.navbar ul li.menu-item:after,
-.nav.fill ul li.menu-item:after {
+nav.navbar ul li.menu-item:after,
+nav.fill ul li.menu-item:after {
 	position: absolute;
 	bottom: -10px;
 	left: 0;
@@ -168,21 +170,26 @@ p a {
 	transition: width 0.3s ease-in-out;
 }
 
-.nav.navbar ul li.menu-item:hover:after,
-.nav.fill ul li.menu-item:hover:after {
+nav.navbar ul li.menu-item:hover:after,
+nav.fill ul li.menu-item:hover:after {
 	width: 110%;
 }
 
-.nav.fill ul li.menu-item {
+nav.fill ul li.menu-item {
 	transition: all 0.3s ease-in-out;
 }
 
 /* ---------------- stroke ---------------- */
 
+.navbar .logo {
+	margin-left: 17rem;
+}
+
 .menu {
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 20px; /* Khoảng cách giữa các mục menu */
+	margin-right: 224px; /* Khoảng cách từ cạnh phải */
 	list-style: none;
 }
 
@@ -216,6 +223,7 @@ p a {
 	padding: 10px 0;
 	list-style: none;
 	min-width: 150px;
+	z-index: 1;
 	border-radius: 4px;
 }
 
@@ -237,6 +245,15 @@ p a {
 .menu-item:hover .dropdown {
 	display: block;
 }
+
+/* .vector {
+	margin-left: auto;
+	width: 1px;
+	height: 84px;
+	background: url(../images/9d648666-e4ea-464e-b36e-5b3fae3c2489.png) no-repeat
+		center;
+	background-size: cover;
+} */
 
 /* ================= NAVBAR END ================= */
 

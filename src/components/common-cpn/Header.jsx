@@ -1,15 +1,11 @@
-import React, { useState } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
 import logo from "../../assets/images/logo.png";
 import expandMore from "../../assets/images/expand_more.svg";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Header() {
 	const location = useLocation();
-	const [menuActive, setMenuActive] = useState(false);
-
-	const toggleMenu = () => {
-		setMenuActive(!menuActive);
-	};
 
 	return (
 		<nav className="navbar">
@@ -17,44 +13,42 @@ function Header() {
 				<a href="/">
 					<img src={logo} alt="3D Motion Lab" />
 				</a>
-				<div className="hamburger" onClick={toggleMenu}></div>
 			</div>
-
-			<div className={`nav ${menuActive ? "active" : ""}`}>
-				<ul className={`menu ${menuActive ? "active" : ""}`}>
+			<nav>
+				<ul className="menu">
 					<li
 						className={`menu-item ${
 							location.pathname === "/dich-vu" ? "active" : ""
 						}`}
 					>
-						<NavLink to="/dich-vu">
+						<Link to="/dich-vu">
 							Dịch vụ
 							<span className="dropdown-arrow">
 								<img src={expandMore} alt="Expand" />
 							</span>
-						</NavLink>
+						</Link>
 					</li>
 					<li
 						className={`menu-item ${
 							location.pathname === "/bao-gia" ? "active" : ""
 						}`}
 					>
-						<NavLink to="/bao-gia">
+						<Link to="/bao-gia">
 							Báo giá
 							<span className="dropdown-arrow">
 								<img src={expandMore} alt="Expand" />
 							</span>
-						</NavLink>
+						</Link>
 					</li>
 					<li
 						className={`menu-item ${
 							location.pathname === "/ve-chung-toi" ? "active" : ""
 						}`}
 					>
-						<NavLink to="/ve-chung-toi">Về chúng tôi</NavLink>
+						<Link to="/ve-chung-toi">Về chúng tôi</Link>
 					</li>
 				</ul>
-			</div>
+			</nav>
 		</nav>
 	);
 }
