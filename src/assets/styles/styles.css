@@ -133,7 +133,7 @@ p a {
 
 .navbar {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	width: 100vw;
 	height: 89px;
@@ -181,15 +181,10 @@ nav.fill ul li.menu-item {
 
 /* ---------------- stroke ---------------- */
 
-.navbar .logo {
-	margin-left: 17rem;
-}
-
 .menu {
 	display: flex;
 	align-items: center;
-	gap: 20px; /* Khoảng cách giữa các mục menu */
-	margin-right: 224px; /* Khoảng cách từ cạnh phải */
+	gap: 20px;
 	list-style: none;
 }
 
