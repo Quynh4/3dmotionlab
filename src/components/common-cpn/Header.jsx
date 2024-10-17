@@ -1,54 +1,61 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
-import expandMore from "../../assets/images/expand_more.svg";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { FaBars, FaChevronDown } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 function Header() {
 	const location = useLocation();
+	const [isMenuOpen, setMenuOpen] = useState(false);
+
+	const toggleMenu = () => {
+		setMenuOpen(!isMenuOpen);
+	};
 
 	return (
-		<nav className="navbar">
+		<nav className={`navbar ${isMenuOpen ? "responsive" : ""}`}>
 			<div className="logo">
 				<a href="/">
 					<img src={logo} alt="3D Motion Lab" />
 				</a>
 			</div>
-			<nav>
-				<ul className="menu">
-					<li
-						className={`menu-item ${
-							location.pathname === "/dich-vu" ? "active" : ""
-						}`}
-					>
-						<Link to="/dich-vu">
-							Dịch vụ
-							<span className="dropdown-arrow">
-								<img src={expandMore} alt="Expand" />
-							</span>
-						</Link>
-					</li>
-					<li
-						className={`menu-item ${
-							location.pathname === "/bao-gia" ? "active" : ""
-						}`}
-					>
-						<Link to="/bao-gia">
-							Báo giá
-							<span className="dropdown-arrow">
-								<img src={expandMore} alt="Expand" />
-							</span>
-						</Link>
-					</li>
-					<li
-						className={`menu-item ${
-							location.pathname === "/ve-chung-toi" ? "active" : ""
-						}`}
-					>
-						<Link to="/ve-chung-toi">Về chúng tôi</Link>
-					</li>
-				</ul>
-			</nav>
+			<div className="menu-icon" onClick={toggleMenu}>
+				<FaBars />
+			</div>
+			<ul className={`menu ${isMenuOpen ? "open" : ""}`}>
+				<li
+					className={`menu-item ${
+						location.pathname === "/dich-vu" ? "active" : ""
+					}`}
+				>
+					<HashLink to="/dich-vu#">
+						Dịch vụ
+						<span className="dropdown-arrow">
+							<FaChevronDown />
+						</span>
+					</HashLink>
+				</li>
+				<li
+					className={`menu-item ${
+						location.pathname === "/bao-gia" ? "active" : ""
+					}`}
+				>
+					<HashLink to="/bao-gia#">
+						Báo giá
+						<span className="dropdown-arrow">
+							<FaChevronDown />
+						</span>
+					</HashLink>
+				</li>
+				<li
+					className={`menu-item ${
+						location.pathname === "/ve-chung-toi" ? "active" : ""
+					}`}
+				>
+					<HashLink to="/ve-chung-toi#">Về chúng tôi</HashLink>
+				</li>
+			</ul>
 		</nav>
 	);
 }

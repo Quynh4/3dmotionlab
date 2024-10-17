@@ -144,7 +144,18 @@ p a {
 	position: sticky;
 	z-index: 500;
 }
-
+.menu-icon {
+	display: none;
+}
+.dropdown-arrow {
+	font-size: 10px;
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+	margin-top: 5px; /* Adjust this value to control vertical positioning */
+	display: flex;
+	align-items: center; /* Centers it vertically */
+}
 /* ---------------- stroke ---------------- */
 nav.navbar ul li.menu-item,
 nav.fill ul li.menu-item {
@@ -1573,6 +1584,66 @@ button {
 		margin: 0;
 	}
 	.package-content {
-		margin: 0;
+		margin: 20px 5px;
+		padding: 20px;
+	}
+
+	.package-content__header {
+		gap: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.button {
+		margin-top: 10px;
+	}
+
+	.form__description {
+		display: none;
+	}
+
+	.form-container {
+		width: auto;
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.menu {
+		display: none;
+		flex-direction: column;
+		width: 100vw; /* Full viewport width */
+		background-color: #000850;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		padding: 0;
+		z-index: 999; /* Make sure it appears on top */
+	}
+
+	.menu-icon {
+		display: block;
+	}
+
+	.menu-item {
+		padding: 14px 16px;
+		width: 100%; /* Make sure menu items span full width */
+		text-align: left; /* Align the text to the left for mobile view */
+	}
+
+	.menu-item a {
+		width: 100%;
+		padding: 14px;
+		display: block; /* Ensure links are block level */
+	}
+
+	.menu.open {
+		display: flex;
+		background: #020733;
+	}
+
+	.navbar {
+		padding: 22px;
+		background: #020733;
+		justify-content: space-between;
 	}
 }
