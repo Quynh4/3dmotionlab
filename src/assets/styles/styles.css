@@ -1474,7 +1474,8 @@ button {
 		line-height: 3rem;
 	}
 
-	.services h2 {
+	.services h2,
+	.faq h2 {
 		font-size: 18px;
 		padding: 0;
 		line-height: 1.9rem;
@@ -1605,6 +1606,11 @@ button {
 		width: auto;
 		padding: 1rem;
 	}
+
+	.about__text {
+		padding: 20px;
+		background: #020733;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -1639,11 +1645,16 @@ button {
 	.menu.open {
 		display: flex;
 		background: #020733;
+		padding-bottom: 12px;
 	}
 
 	.navbar {
 		padding: 22px;
 		background: #020733;
 		justify-content: space-between;
+	}
+
+	.dropdown-arrow {
+		display: none;
 	}
 }
