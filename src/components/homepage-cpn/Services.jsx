@@ -29,9 +29,9 @@ const Services = () => {
 						<span>Explore our Services</span>
 					</div>
 					<h2>
-						Elevate Your Marketplace Experience:
+						Nâng Tầm Trải Nghiệm Của Bạn
 						<br />
-						Discover Our Unique Features
+						Khám Phá Dịch Vụ 3D Motion Lab
 					</h2>
 				</div>
 

@@ -2,8 +2,8 @@ const Hero = () => {
 	return (
 		<section className="hero">
 			<div className="text">
-				<h1>Chi phí tối ưu</h1>
-				<h2>Thành công đột phá</h2>
+				<h1>3D Motion Lab</h1>
+				<h2>Đồng hành cùng sự thành công của bạn</h2>
 
 				<p className="description">
 					3D Motion Lab là công ty hàng đầu trong lĩnh vực thiết kế 3D, chuyên

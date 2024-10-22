@@ -27,8 +27,8 @@ const Testimonial = () => {
 						<span>Explore our Services</span>
 					</div>
 					<h2>
-						Elevate Your Marketplace Experience:
-						<br /> Discover Our Unique Features
+						Tối Ưu Hóa Trải Nghiệm Của Bạn
+						<br /> Kết Nối Cùng Đội Ngũ Của Chúng Tôi
 					</h2>
 					<div className="testimonial-grid">
 						<div className="column">

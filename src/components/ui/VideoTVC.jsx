@@ -33,7 +33,7 @@ const VideoTVC = () => {
 				className="custom-video_video"
 				width="100%"
 				height="auto"
-				poster={tvc}
+				// poster={tvc}
 				onClick={handleVideoClick}
 			>
 				<source src={video} type="video/mp4" />
