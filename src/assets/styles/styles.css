@@ -715,7 +715,7 @@ nav.fill ul li.menu-item {
 /* ================= SERVICE END  =================  */
 /* ================= TESTIMONIAL START  =================  */
 .testimonial {
-	padding: 14rem 2rem 0rem 2rem;
+	padding: 10rem 2rem 4rem 2rem;
 }
 
 .testimonial .testimonial-grid {
@@ -1096,12 +1096,12 @@ nav.fill ul li.menu-item {
 	position: relative;
 	margin: 2rem 13rem;
 	background: #000a6b;
-	padding: 3rem;
+	padding: 0 3rem 3rem 3rem;
 }
 
 .package-content__header {
 	display: flex;
-	gap: 40rem;
+	justify-content: space-between;
 }
 
 .package-content__header .button:hover {
