@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useRef, useState } from "react";
-import tvc from "../../assets/images/tvc.png";
 import video from "../../assets/videos/video.mp4";
 import { ReactComponent as PlayIcon } from "../../assets/images/icon-play.svg";
 
@@ -33,7 +32,6 @@ const VideoTVC = () => {
 				className="custom-video_video"
 				width="100%"
 				height="auto"
-				// poster={tvc}
 				onClick={handleVideoClick}
 			>
 				<source src={video} type="video/mp4" />

@@ -1,3 +1,4 @@
+import { useRef, useEffect } from "react";
 import about from "../../assets/images/about.png";
 import creative from "../../assets/images/creative.png";
 import mission from "../../assets/images/mission.png";
@@ -5,9 +6,50 @@ import { ReactComponent as StrongIcon } from "../../assets/images/icon-strong.sv
 import { ReactComponent as EyeIcon } from "../../assets/images/icon-eye.svg";
 
 const AboutUs = () => {
+	// Tạo refs cho các phần tử muốn theo dõi
+	const section1Ref = useRef(null);
+	const section2Ref = useRef(null);
+	const section3Ref = useRef(null);
+
+	useEffect(() => {
+		const sections = [
+			section1Ref.current,
+			section2Ref.current,
+			section3Ref.current,
+		];
+
+		// IntersectionObserver để theo dõi các phần tử
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						// Thêm lớp 'show' khi phần tử vào tầm nhìn
+						if (entry.target.classList.contains("slide-left")) {
+							entry.target.classList.add("show-left");
+						} else {
+							entry.target.classList.add("show-right");
+						}
+					}
+				});
+			},
+			{ threshold: 0.05 } // Kích hoạt khi chỉ 5% phần tử xuất hiện
+		);
+
+		sections.forEach((section) => {
+			if (section) observer.observe(section);
+		});
+
+		// Cleanup observer khi component bị huỷ
+		return () => {
+			sections.forEach((section) => {
+				if (section) observer.unobserve(section);
+			});
+		};
+	}, []);
+
 	return (
 		<>
-			<section class="about-us">
+			<section ref={section1Ref} className="about-us slide-right hidden">
 				<img src={about} alt="Television Commercial" />
 				<div className="text">
 					<h3>Về chúng tôi</h3>
@@ -21,7 +63,11 @@ const AboutUs = () => {
 				</div>
 			</section>
 
-			<section class="about__section" id="creative">
+			<section
+				ref={section2Ref}
+				className="about__section slide-left hidden"
+				id="creative"
+			>
 				<div className="about__text">
 					<h3>
 						<div className="icon">
@@ -42,7 +88,7 @@ const AboutUs = () => {
 				</div>
 			</section>
 
-			<section class="about__section">
+			<section ref={section3Ref} className="about__section slide-right hidden">
 				<div className="about__img">
 					<img src={mission} alt="" />
 				</div>
