@@ -9,9 +9,9 @@ const Wesbsite3DPrices = () => {
 						<CameraIcon />
 					</div>
 
-					<span>TVC</span>
+					<span>3D Website</span>
 				</div>
-				<h2>Television Commercial</h2>
+				<h2>3D Website</h2>
 			</div>
 			<div className="package-content">
 				<div className="package-content__header">
