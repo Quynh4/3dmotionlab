@@ -8,9 +8,21 @@ import { HashLink } from "react-router-hash-link";
 function Header() {
 	const location = useLocation();
 	const [isMenuOpen, setMenuOpen] = useState(false);
+	const [dropdownOpen, setDropdownOpen] = useState({
+		services: false,
+		pricing: false,
+	});
 
 	const toggleMenu = () => {
 		setMenuOpen(!isMenuOpen);
+	};
+
+	const handleMouseEnter = (menu) => {
+		setDropdownOpen((prevState) => ({ ...prevState, [menu]: true }));
+	};
+
+	const handleMouseLeave = (menu) => {
+		setDropdownOpen((prevState) => ({ ...prevState, [menu]: false }));
 	};
 
 	return (
@@ -28,6 +40,8 @@ function Header() {
 					className={`menu-item ${
 						location.pathname === "/dich-vu" ? "active" : ""
 					}`}
+					// onMouseEnter={() => handleMouseEnter("services")}
+					// onMouseLeave={() => handleMouseLeave("services")}
 				>
 					<HashLink to="/dich-vu#">
 						Dịch vụ
@@ -35,11 +49,26 @@ function Header() {
 							<FaChevronDown />
 						</span>
 					</HashLink>
+					{
+						<ul className="submenu">
+							<li>
+								<HashLink to="/dich-vu#tvc">TVC</HashLink>
+							</li>
+							<li>
+								<HashLink to="/dich-vu#web">3D Website</HashLink>
+							</li>
+							<li>
+								<HashLink to="/dich-vu#vr360">VR360</HashLink>
+							</li>
+						</ul>
+					}
 				</li>
 				<li
 					className={`menu-item ${
 						location.pathname === "/bao-gia" ? "active" : ""
 					}`}
+					onMouseEnter={() => handleMouseEnter("pricing")}
+					onMouseLeave={() => handleMouseLeave("pricing")}
 				>
 					<HashLink to="/bao-gia#">
 						Báo giá
@@ -47,6 +76,19 @@ function Header() {
 							<FaChevronDown />
 						</span>
 					</HashLink>
+					{dropdownOpen.pricing && (
+						<ul className="submenu">
+							<li>
+								<HashLink to="/bao-gia#tvc">TVC</HashLink>
+							</li>
+							<li>
+								<HashLink to="/bao-gia#web">3D Website</HashLink>
+							</li>
+							<li>
+								<HashLink to="/bao-gia#vr360">VR360</HashLink>
+							</li>
+						</ul>
+					)}
 				</li>
 				<li
 					className={`menu-item ${

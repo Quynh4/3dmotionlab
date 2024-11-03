@@ -145,6 +145,36 @@ p a {
 	position: sticky;
 	z-index: 500;
 }
+
+/* Submenu */
+.submenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #28356b;
+	list-style-type: none;
+	margin-top: 0.5rem;
+	min-width: 150px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item:hover .submenu {
+	display: block;
+}
+.submenu:hover {
+	display: block;
+}
+
+.submenu li {
+	padding: 0.7rem 1rem;
+}
+
+.submenu li:hover {
+	background-color: #021357;
+	display: block;
+}
+
 .menu-icon {
 	display: none;
 }
@@ -153,7 +183,7 @@ p a {
 	margin-left: 10px;
 	width: 20px;
 	height: 20px;
-	margin-top: 5px; /* Adjust this value to control vertical positioning */
+	margin-top: 5px;
 	display: flex;
 	align-items: center; /* Centers it vertically */
 }
@@ -229,7 +259,6 @@ nav.fill ul li.menu-item {
 	background-color: #28356b;
 	padding: 10px 0;
 	list-style: none;
-	min-width: 150px;
 	z-index: 1;
 	border-radius: 4px;
 }
@@ -1142,7 +1171,9 @@ nav.fill ul li.menu-item {
 }
 
 .about-us img {
-	max-width: 100%;
+	width: 100%;
+	top: -155px;
+	position: absolute;
 }
 .about-us .text {
 	position: absolute;
@@ -1461,6 +1492,9 @@ button {
 }
 
 @media (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
 	.testimonial-grid,
 	.service-grid,
 	.service__section,
@@ -1551,7 +1585,13 @@ button {
 		position: none;
 		margin: 0;
 		height: auto;
-		overflow: visible;
+		/* overflow: visible; */
+		/* margin-top: 200px; */
+	}
+
+	.about-us img {
+		position: relative;
+		top: 0;
 	}
 
 	.about-us .text {
@@ -1563,6 +1603,10 @@ button {
 
 	.about-us h3 {
 		width: auto;
+	}
+
+	.about__img {
+		max-width: 22rem;
 	}
 	/* =========================== */
 	.footer-content {

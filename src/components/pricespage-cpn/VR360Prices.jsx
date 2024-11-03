@@ -4,7 +4,7 @@ import ChooseButton from "../ui/ChooseButton";
 
 const VR360Prices = () => {
 	return (
-		<section class="pricing-container">
+		<section class="pricing-container" id="vr360">
 			<div className="text">
 				<div className="subtext">
 					<div className="icon">

@@ -3,13 +3,16 @@ import VideoTVC from "../ui/VideoTVC";
 import { ReactComponent as CameraIcon } from "../../assets/images/icon-camera.svg";
 import { ReactComponent as MovieIcon } from "../../assets/images/icon-movie.svg";
 import { ReactComponent as VRIcon } from "../../assets/images/icon-vr-white.svg";
+import video from "../../assets/videos/video.mp4";
+import videovr360 from "../../assets/videos/VR360.mov";
+
 import ContactButton from "../ui/ContactButton";
 
 const Services = () => {
 	return (
 		<>
 			<section className="service__section" id="tvc">
-				<VideoTVC />
+				<VideoTVC vidSrc={video} />
 				<div className="service__text">
 					<div className="subtext">
 						<div className="icon">
@@ -66,11 +69,16 @@ const Services = () => {
 						<ContactButton />
 					</div>
 				</div>
-				<VideoTVC />
+				<iframe
+					src="https://drive.google.com/file/d/1ND8os7RRQD89YDPf_t2X03gN3w9QKUpx/preview"
+					width="640"
+					allow="autoplay"
+				></iframe>
 			</section>
 
 			<section className="service__section" id="vr360">
-				<VideoTVC />
+				<VideoTVC vidSrc={videovr360} />
+
 				<div className="service__text">
 					<div className="subtext">
 						<div className="icon">

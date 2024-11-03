@@ -2,7 +2,7 @@ import { ReactComponent as CameraIcon } from "../../assets/images/icon-camera.sv
 import ContactButton from "../ui/ContactButton";
 const Wesbsite3DPrices = () => {
 	return (
-		<section class="pricing-container">
+		<section class="pricing-container" id="web">
 			<div className="text">
 				<div className="subtext">
 					<div className="icon">
@@ -55,34 +55,32 @@ const Wesbsite3DPrices = () => {
 			</div>
 
 			<div class="content">
-				<h3>
-					Lý do lựa chọn 3D Motion Lab làm đơn vị sản xuất phim quảng cáo?
-				</h3>
-				Để đạt được kết quả tối ưu nhất khi làm việc, chúng tôi luôn tuân thủ
-				chặt chẽ quy trình làm việc sau đây:
+				<h3>Lý do lựa chọn 3D Motion Lab làm đơn vị thiết kế website 3D?</h3>
+				Các dự án website 3D do 3D Motion Lab thực hiện luôn được đánh giá cao
+				về chất lượng, tính sáng tạo và đáp ứng tối đa nhu cầu doanh nghiệp về
+				ngân sách và thời gian:
 				<ul>
 					<li>
-						Đội ngũ chuyên gia: 3D Motion Lab sở hữu đội ngũ giàu kinh nghiệm và
-						hợp tác với các chuyên gia hàng đầu trong lĩnh vực công nghệ VR và
-						thiết kế 3D.
+						Đội ngũ chuyên gia: 3D Motion Lab có đội ngũ thiết kế 3D giàu kinh
+						nghiệm, kết hợp cùng các chuyên gia hàng đầu trong lĩnh vực công
+						nghệ và thiết kế.
 					</li>
 					<li>
-						Thấu hiểu khách hàng: Chúng tôi phân tích nhu cầu để đưa ra giải
-						pháp VR360 tối ưu, giúp thương hiệu truyền tải thông điệp một cách
-						sống động và hiệu quả.
+						Thấu hiểu khách hàng: Chúng tôi phân tích chi tiết yêu cầu của khách
+						hàng để đưa ra giải pháp thiết kế 3D tối ưu, hiệu quả và phù hợp với
+						từng thương hiệu.
 					</li>
 					<li>
-						Quy trình tiêu chuẩn quốc tế: Quy trình làm việc chuyên nghiệp, rõ
-						ràng và nhanh chóng, tập trung vào nhu cầu khách hàng.
+						Quy trình tiêu chuẩn quốc tế: Quy trình làm việc rõ ràng, chuyên
+						nghiệp, đảm bảo tiến độ và chất lượng, với khách hàng là trọng tâm.
 					</li>
 					<li>
-						Thiết bị tiên tiến: Sử dụng công nghệ và trang thiết bị hiện đại
-						nhất để mang đến trải nghiệm VR360 chân thực và tương tác cao.
+						Công nghệ tiên tiến: Sử dụng công nghệ 3D mới nhất để mang lại trải
+						nghiệm website sống động, thu hút và tương tác cao.
 					</li>
 					<li>
-						Dịch vụ toàn diện: 3D Motion Lab cam kết mang lại giải pháp VR360
-						chất lượng, đáp ứng mọi yêu cầu của khách hàng và tối ưu hóa trải
-						nghiệm thương hiệu.
+						Dịch vụ toàn diện: 3D Motion Lab cam kết mang lại lợi ích tối đa cho
+						khách hàng, đảm bảo sản phẩm hoàn chỉnh và hiệu quả.
 					</li>
 				</ul>
 			</div>

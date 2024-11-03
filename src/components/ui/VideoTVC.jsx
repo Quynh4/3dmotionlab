@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useRef, useState } from "react";
-import video from "../../assets/videos/video.mp4";
-import { ReactComponent as PlayIcon } from "../../assets/images/icon-play.svg";
 
-const VideoTVC = () => {
+import { ReactComponent as PlayIcon } from "../../assets/images/icon-play.svg";
+// import video from "../../assets/videos/video.mp4";
+
+const VideoTVC = ({ vidSrc }) => {
 	const videoRef = useRef(null);
 	const [isPlaying, setIsPlaying] = useState(false);
 	const [isHovered, setIsHovered] = useState(false);
@@ -34,7 +35,7 @@ const VideoTVC = () => {
 				height="auto"
 				onClick={handleVideoClick}
 			>
-				<source src={video} type="video/mp4" />
+				<source src={vidSrc} />
 				Your browser does not support the video tag.
 			</video>
 			{isHovered && (

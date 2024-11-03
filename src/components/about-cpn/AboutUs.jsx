@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import about from "../../assets/images/about.png";
+import about from "../../assets/images/about.jpg";
 import creative from "../../assets/images/creative.png";
 import mission from "../../assets/images/mission.png";
 import { ReactComponent as StrongIcon } from "../../assets/images/icon-strong.svg";
@@ -50,7 +50,7 @@ const AboutUs = () => {
 	return (
 		<>
 			<section ref={section1Ref} className="about-us slide-right hidden">
-				<img src={about} alt="Television Commercial" />
+				<img src={about} alt="About us" />
 				<div className="text">
 					<h3>Về chúng tôi</h3>
 					<p>

@@ -3,7 +3,7 @@ import { ReactComponent as CameraIcon } from "../../assets/images/icon-camera.sv
 import ChooseButton from "../ui/ChooseButton";
 const TelevisionPrices = () => {
 	return (
-		<section class="pricing-container">
+		<section class="pricing-container" id="tvc">
 			<div className="text">
 				<div className="subtext">
 					<div className="icon">
@@ -108,31 +108,30 @@ const TelevisionPrices = () => {
 				<h3>
 					Lý do lựa chọn 3D Motion Lab làm đơn vị sản xuất phim quảng cáo?
 				</h3>
-				Để đạt được kết quả tối ưu nhất khi làm việc, chúng tôi luôn tuân thủ
-				chặt chẽ quy trình làm việc sau đây:
+				TVC do 3D Motion Lab thực hiện luôn được đánh giá cao về chất lượng, phù
+				hợp với tiêu chí của doanh nghiệp, đồng thời đảm bảo ngân sách và thời
+				gian yêu cầu:
 				<ul>
 					<li>
-						Đội ngũ chuyên gia: 3D Motion Lab sở hữu đội ngũ giàu kinh nghiệm và
-						hợp tác với các chuyên gia hàng đầu trong lĩnh vực công nghệ VR và
-						thiết kế 3D.
+						Đội ngũ chuyên gia: Chúng tôi sở hữu đội ngũ nhân sự giàu kinh
+						nghiệm và hợp tác với các chuyên gia hàng đầu trong lĩnh vực thương
+						hiệu, marketing, và quảng cáo.
 					</li>
 					<li>
-						Thấu hiểu khách hàng: Chúng tôi phân tích nhu cầu để đưa ra giải
-						pháp VR360 tối ưu, giúp thương hiệu truyền tải thông điệp một cách
-						sống động và hiệu quả.
+						Thấu hiểu khách hàng: 3D Motion Lab phân tích kỹ lưỡng nhu cầu khách
+						hàng, từ đó đưa ra giải pháp tối ưu và hiệu quả nhất.
 					</li>
 					<li>
-						Quy trình tiêu chuẩn quốc tế: Quy trình làm việc chuyên nghiệp, rõ
-						ràng và nhanh chóng, tập trung vào nhu cầu khách hàng.
+						Quy trình tiêu chuẩn quốc tế: Quy trình làm việc rõ ràng, nhanh
+						chóng, lấy khách hàng làm trọng tâm.
 					</li>
 					<li>
-						Thiết bị tiên tiến: Sử dụng công nghệ và trang thiết bị hiện đại
-						nhất để mang đến trải nghiệm VR360 chân thực và tương tác cao.
+						Trang thiết bị hiện đại: Chúng tôi sử dụng thiết bị tiên tiến nhất
+						để mang đến những thước phim chân thực và sống động.
 					</li>
 					<li>
-						Dịch vụ toàn diện: 3D Motion Lab cam kết mang lại giải pháp VR360
-						chất lượng, đáp ứng mọi yêu cầu của khách hàng và tối ưu hóa trải
-						nghiệm thương hiệu.
+						Dịch vụ chuyên nghiệp: 3D Motion Lab cam kết mang lại những lợi ích
+						tốt nhất cho khách hàng, đáp ứng mọi yêu cầu một cách hoàn hảo.
 					</li>
 				</ul>
 			</div>
