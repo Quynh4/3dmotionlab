@@ -4,6 +4,7 @@ import { ReactComponent as Icon1 } from "../../assets/images/icon1.svg";
 import { ReactComponent as Icon2 } from "../../assets/images/icon2.svg";
 import { ReactComponent as Icon3 } from "../../assets/images/icon3.svg";
 import { ReactComponent as Icon4 } from "../../assets/images/icon4.svg";
+import video from "../../assets/videos/video.mp4";
 
 const Hero = () => {
 	return (
@@ -52,7 +53,7 @@ const Hero = () => {
 
 				<ContactButton />
 
-				<VideoTVC />
+				<VideoTVC vidSrc={video} />
 			</div>
 		</section>
 	);

@@ -6,7 +6,6 @@ import { ReactComponent as StrongIcon } from "../../assets/images/icon-strong.sv
 import { ReactComponent as EyeIcon } from "../../assets/images/icon-eye.svg";
 
 const AboutUs = () => {
-	// Tạo refs cho các phần tử muốn theo dõi
 	const section1Ref = useRef(null);
 	const section2Ref = useRef(null);
 	const section3Ref = useRef(null);
@@ -18,21 +17,21 @@ const AboutUs = () => {
 			section3Ref.current,
 		];
 
-		// IntersectionObserver để theo dõi các phần tử
 		const observer = new IntersectionObserver(
 			(entries) => {
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
-						// Thêm lớp 'show' khi phần tử vào tầm nhìn
 						if (entry.target.classList.contains("slide-left")) {
 							entry.target.classList.add("show-left");
-						} else {
+						} else if (entry.target.classList.contains("slide-right")) {
 							entry.target.classList.add("show-right");
+						} else if (entry.target.classList.contains("fade-in")) {
+							entry.target.classList.add("fade-in--visible");
 						}
 					}
 				});
 			},
-			{ threshold: 0.05 } // Kích hoạt khi chỉ 5% phần tử xuất hiện
+			{ threshold: 0.1 } // Kích hoạt khi chỉ 5% phần tử xuất hiện
 		);
 
 		sections.forEach((section) => {
@@ -49,7 +48,7 @@ const AboutUs = () => {
 
 	return (
 		<>
-			<section ref={section1Ref} className="about-us slide-right hidden">
+			<section ref={section1Ref} className="about-us fade-in">
 				<img src={about} alt="About us" />
 				<div className="text">
 					<h3>Về chúng tôi</h3>
