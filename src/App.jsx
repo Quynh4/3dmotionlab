@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/common-cpn/Header";
 import Footer from "./components/common-cpn/Footer";
 import Home from "./pages/HomePage";
+import AdminPage from "./pages/AdminPage";
 import ServicesPage from "./pages/ServicesPage";
 import "./assets/styles/styles.css";
 import PricesPage from "./pages/PricesPage";
@@ -33,6 +34,7 @@ function App() {
 					<Route path="/dich-vu" element={<ServicesPage />} />
 					<Route path="/bao-gia" element={<PricesPage />} />
 					<Route path="/ve-chung-toi" element={<AboutPage />} />
+					<Route path="quan-ly" element={<AdminPage />} />
 				</Routes>
 				<Footer />
 			</div>
