@@ -28,7 +28,7 @@ function Header() {
 	return (
 		<nav className={`navbar ${isMenuOpen ? "responsive" : ""}`}>
 			<div className="logo">
-				<a href="/">
+				<a href={`${process.env.PUBLIC_URL}/`}>
 					<img src={logo} alt="3D Motion Lab" />
 				</a>
 			</div>
@@ -38,39 +38,35 @@ function Header() {
 			<ul className={`menu ${isMenuOpen ? "open" : ""}`}>
 				<li
 					className={`menu-item ${
-						location.pathname === "/dich-vu" ? "active" : ""
+						location.pathname === `${process.env.PUBLIC_URL}/dich-vu` ? "active" : ""
 					}`}
-					// onMouseEnter={() => handleMouseEnter("services")}
-					// onMouseLeave={() => handleMouseLeave("services")}
 				>
-					<HashLink to="/dich-vu#">
+					<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#`}>
 						Dịch vụ
 						<span className="dropdown-arrow">
 							<FaChevronDown />
 						</span>
 					</HashLink>
-					{
-						<ul className="submenu">
-							<li>
-								<HashLink to="/dich-vu#tvc">TVC</HashLink>
-							</li>
-							<li>
-								<HashLink to="/dich-vu#web">3D Website</HashLink>
-							</li>
-							<li>
-								<HashLink to="/dich-vu#vr360">VR360</HashLink>
-							</li>
-						</ul>
-					}
+					<ul className="submenu">
+						<li>
+							<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#tvc`}>TVC</HashLink>
+						</li>
+						<li>
+							<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#web`}>3D Website</HashLink>
+						</li>
+						<li>
+							<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#vr360`}>VR360</HashLink>
+						</li>
+					</ul>
 				</li>
 				<li
 					className={`menu-item ${
-						location.pathname === "/bao-gia" ? "active" : ""
+						location.pathname === `${process.env.PUBLIC_URL}/bao-gia` ? "active" : ""
 					}`}
 					onMouseEnter={() => handleMouseEnter("pricing")}
 					onMouseLeave={() => handleMouseLeave("pricing")}
 				>
-					<HashLink to="/bao-gia#">
+					<HashLink to={`${process.env.PUBLIC_URL}/bao-gia#`}>
 						Báo giá
 						<span className="dropdown-arrow">
 							<FaChevronDown />
@@ -79,23 +75,23 @@ function Header() {
 					{dropdownOpen.pricing && (
 						<ul className="submenu">
 							<li>
-								<HashLink to="/bao-gia#tvc">TVC</HashLink>
+								<HashLink to={`${process.env.PUBLIC_URL}/bao-gia#tvc`}>TVC</HashLink>
 							</li>
 							<li>
-								<HashLink to="/bao-gia#web">3D Website</HashLink>
+								<HashLink to={`${process.env.PUBLIC_URL}/bao-gia#web`}>3D Website</HashLink>
 							</li>
 							<li>
-								<HashLink to="/bao-gia#vr360">VR360</HashLink>
+								<HashLink to={`${process.env.PUBLIC_URL}/bao-gia#vr360`}>VR360</HashLink>
 							</li>
 						</ul>
 					)}
 				</li>
 				<li
 					className={`menu-item ${
-						location.pathname === "/ve-chung-toi" ? "active" : ""
+						location.pathname === `${process.env.PUBLIC_URL}/ve-chung-toi` ? "active" : ""
 					}`}
 				>
-					<HashLink to="/ve-chung-toi#">Về chúng tôi</HashLink>
+					<HashLink to={`${process.env.PUBLIC_URL}/ve-chung-toi#`}>Về chúng tôi</HashLink>
 				</li>
 			</ul>
 		</nav>

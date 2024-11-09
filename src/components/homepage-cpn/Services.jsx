@@ -1,5 +1,4 @@
 import React from "react";
-
 import tvc from "../../assets/images/tvc.png";
 import img3dwebsite from "../../assets/images/img3dwebsite.png";
 import vr360 from "../../assets/images/vr360.png";
@@ -37,7 +36,7 @@ const Services = () => {
 
 				<div className="service-grid">
 					<div className="column">
-						<HashLink to="/dich-vu#tvc" smooth>
+						<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#tvc`} smooth>
 							<div className="service-item tvc">
 								<div className="imgNtext">
 									<img src={tvc} alt="Television Commercial" />
@@ -51,7 +50,7 @@ const Services = () => {
 								</div>
 							</div>
 						</HashLink>
-						<HashLink to="/dich-vu#web" smooth>
+						<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#web`} smooth>
 							<div className="service-item web">
 								<div className="text-3">
 									<h3>3D Website</h3>
@@ -69,7 +68,7 @@ const Services = () => {
 					</div>
 
 					<div className="column">
-						<HashLink to="/dich-vu#vr360" smooth>
+						<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#vr360`} smooth>
 							<div className="service-item vr">
 								<div className="imgNtext">
 									<img src={vr360} alt="VR360 Virtual Tour" />
@@ -84,9 +83,9 @@ const Services = () => {
 								</div>
 							</div>
 						</HashLink>
-						<HashLink to="/dich-vu#" smooth>
+						<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#`} smooth>
 							<div className="service-item explore">
-								<img src={explore} alt="" />
+								<img src={explore} alt="Explore" />
 							</div>
 						</HashLink>
 					</div>
