@@ -41,7 +41,7 @@ function Header() {
 						location.pathname === `${process.env.PUBLIC_URL}/dich-vu` ? "active" : ""
 					}`}
 				>
-					<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#`}>
+					<HashLink to={`/dich-vu#`}>
 						Dịch vụ
 						<span className="dropdown-arrow">
 							<FaChevronDown />
@@ -49,13 +49,13 @@ function Header() {
 					</HashLink>
 					<ul className="submenu">
 						<li>
-							<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#tvc`}>TVC</HashLink>
+							<HashLink to={`/dich-vu#tvc`}>TVC</HashLink>
 						</li>
 						<li>
-							<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#web`}>3D Website</HashLink>
+							<HashLink to={`/dich-vu#web`}>3D Website</HashLink>
 						</li>
 						<li>
-							<HashLink to={`${process.env.PUBLIC_URL}/dich-vu#vr360`}>VR360</HashLink>
+							<HashLink to={`/dich-vu#vr360`}>VR360</HashLink>
 						</li>
 					</ul>
 				</li>
@@ -66,7 +66,7 @@ function Header() {
 					onMouseEnter={() => handleMouseEnter("pricing")}
 					onMouseLeave={() => handleMouseLeave("pricing")}
 				>
-					<HashLink to={`${process.env.PUBLIC_URL}/bao-gia#`}>
+					<HashLink to={`/bao-gia#`}>
 						Báo giá
 						<span className="dropdown-arrow">
 							<FaChevronDown />
@@ -75,13 +75,13 @@ function Header() {
 					{dropdownOpen.pricing && (
 						<ul className="submenu">
 							<li>
-								<HashLink to={`${process.env.PUBLIC_URL}/bao-gia#tvc`}>TVC</HashLink>
+								<HashLink to={`/bao-gia#tvc`}>TVC</HashLink>
 							</li>
 							<li>
-								<HashLink to={`${process.env.PUBLIC_URL}/bao-gia#web`}>3D Website</HashLink>
+								<HashLink to={`/bao-gia#web`}>3D Website</HashLink>
 							</li>
 							<li>
-								<HashLink to={`${process.env.PUBLIC_URL}/bao-gia#vr360`}>VR360</HashLink>
+								<HashLink to={`/bao-gia#vr360`}>VR360</HashLink>
 							</li>
 						</ul>
 					)}
@@ -91,7 +91,7 @@ function Header() {
 						location.pathname === `${process.env.PUBLIC_URL}/ve-chung-toi` ? "active" : ""
 					}`}
 				>
-					<HashLink to={`${process.env.PUBLIC_URL}/ve-chung-toi#`}>Về chúng tôi</HashLink>
+					<HashLink to={`/ve-chung-toi#`}>Về chúng tôi</HashLink>
 				</li>
 			</ul>
 		</nav>
