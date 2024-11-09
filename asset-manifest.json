@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/3dmotionlab/static/css/main.8f69e9d6.css",
-    "main.js": "/3dmotionlab/static/js/main.a279475c.js",
+    "main.js": "/3dmotionlab/static/js/main.292ed19b.js",
     "static/js/453.228a75db.chunk.js": "/3dmotionlab/static/js/453.228a75db.chunk.js",
     "static/media/VR360.mov": "/3dmotionlab/static/media/VR360.0eead4e63897d142a7a6.mov",
     "static/media/video.mp4": "/3dmotionlab/static/media/video.e0af2e64098c3edcd802.mp4",
@@ -40,11 +40,11 @@
     "static/media/icon-plus.svg": "/3dmotionlab/static/media/icon-plus.16c64f63b674bdfa010fc32b16cc4475.svg",
     "static/media/icon-minus.svg": "/3dmotionlab/static/media/icon-minus.f9df3a1a27c1a1f59fc8689dac819c94.svg",
     "main.8f69e9d6.css.map": "/3dmotionlab/static/css/main.8f69e9d6.css.map",
-    "main.a279475c.js.map": "/3dmotionlab/static/js/main.a279475c.js.map",
+    "main.292ed19b.js.map": "/3dmotionlab/static/js/main.292ed19b.js.map",
     "453.228a75db.chunk.js.map": "/3dmotionlab/static/js/453.228a75db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f69e9d6.css",
-    "static/js/main.a279475c.js"
+    "static/js/main.292ed19b.js"
   ]
 }
