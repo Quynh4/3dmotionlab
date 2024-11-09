@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/common-cpn/Header";
 import Footer from "./components/common-cpn/Footer";
 import Home from "./pages/HomePage";
@@ -25,7 +25,7 @@ function App() {
 	};
 
 	return (
-		<BrowserRouter>
+		<Router>
 			<ScrollToTop />
 			<div className="App">
 				<Header />
@@ -38,7 +38,7 @@ function App() {
 				</Routes>
 				<Footer />
 			</div>
-		</BrowserRouter>
+		</Router>
 	);
 }
 
