@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import logo from "../../assets/images/logo.png";
 import { useLocation } from "react-router-dom";
@@ -27,7 +28,7 @@ function Header() {
 	return (
 		<nav className={`navbar ${isMenuOpen ? "responsive" : ""}`}>
 			<div className="logo">
-				<a href={`${process.env.PUBLIC_URL}/#`}>
+				<a href={`${process.env.PUBLIC_URL}/`}>
 					<img src={logo} alt="3D Motion Lab" />
 				</a>
 			</div>
@@ -37,7 +38,7 @@ function Header() {
 			<ul className={`menu ${isMenuOpen ? "open" : ""}`}>
 				<li
 					className={`menu-item ${
-						location.hash === "#/dich-vu" ? "active" : ""
+						location.pathname === `${process.env.PUBLIC_URL}/dich-vu` ? "active" : ""
 					}`}
 				>
 					<HashLink to={`/dich-vu#`}>
@@ -60,7 +61,7 @@ function Header() {
 				</li>
 				<li
 					className={`menu-item ${
-						location.hash === "#/bao-gia" ? "active" : ""
+						location.pathname === `${process.env.PUBLIC_URL}/bao-gia` ? "active" : ""
 					}`}
 					onMouseEnter={() => handleMouseEnter("pricing")}
 					onMouseLeave={() => handleMouseLeave("pricing")}
@@ -87,7 +88,7 @@ function Header() {
 				</li>
 				<li
 					className={`menu-item ${
-						location.hash === "#/ve-chung-toi" ? "active" : ""
+						location.pathname === `${process.env.PUBLIC_URL}/ve-chung-toi` ? "active" : ""
 					}`}
 				>
 					<HashLink to={`/ve-chung-toi#`}>Về chúng tôi</HashLink>
