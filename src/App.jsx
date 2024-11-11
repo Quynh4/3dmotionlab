@@ -25,7 +25,7 @@ function App() {
 	};
 
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename="/3dmotionlab">
 			<ScrollToTop />
 			<div className="App">
 				<Header />
