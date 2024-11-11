@@ -1,6 +1,7 @@
 import React from "react";
 import ContactInfo from "../ui/ContactInfo";
-import { FaFacebook, FaTiktok, FaYoutube } from "react-icons/fa"; // Import react-icons
+import { FaFacebook, FaTiktok, FaYoutube } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
 	return (
@@ -15,29 +16,19 @@ const Footer = () => {
 							<a href="/ve-chung-toi">Về chúng tôi</a>
 						</div>
 						<div className="social-icons">
-							<a
-								href="https://www.facebook.com/3dmotionlab.official?locale=vi_VN"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<HashLink to="https://www.facebook.com/3dmotionlab.official?locale=vi_VN">
 								<FaFacebook size={33} color="white" />
-							</a>
+							</HashLink>
 
-							<a
-								href="https://www.tiktok.com/@becuu_non"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<HashLink to="https://www.tiktok.com/@becuu_non">
 								<FaTiktok size={33} color="white" />
-							</a>
+							</HashLink>
 
-							<a
-								href="https://www.youtube.com/@3DMotionLabOfficial"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<HashLink to="https://www.youtube.com/@3DMotionLabOfficial">
 								<FaYoutube size={33} color="white" />
-							</a>
+							</HashLink>
+
+							<HashLink to="bao-cao#">Báo cáo</HashLink>
 						</div>
 					</div>
 				</div>
