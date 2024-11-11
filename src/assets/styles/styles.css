@@ -102,6 +102,14 @@ p {
 	font-size: 16px;
 	text-align: left;
 }
+
+.stats-card p {
+	font-family: "BT Beau Sans";
+	color: #ff9b9b;
+	font-size: 40px;
+	text-align: center;
+	margin: 20px;
+}
 p a {
 	position: relative;
 	color: #006aff;

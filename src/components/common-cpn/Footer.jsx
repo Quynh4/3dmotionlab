@@ -28,9 +28,7 @@ const Footer = () => {
 								<FaYoutube size={33} color="white" />
 							</HashLink>
 
-							<div className="footer-links">
-								<HashLink to="quan-ly#">Quản lý</HashLink>
-							</div>
+							<HashLink to="quan-ly#">Quản lý</HashLink>
 						</div>
 					</div>
 				</div>

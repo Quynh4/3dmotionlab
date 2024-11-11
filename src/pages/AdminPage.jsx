@@ -12,10 +12,9 @@ const AdminPage = () => {
 			<main className="main-content">
 				<Header />
 				<div className="stats-cards">
-					<StatsCard title="Total Visits" value="120K" color="blue" />
-					<StatsCard title="New Users" value="1.5K" color="green" />
-					<StatsCard title="Sales" value="$50K" color="purple" />
-					<StatsCard title="Bounce Rate" value="25%" color="red" />
+					<StatsCard title="Total Visits" value="2000" color="blue" />
+					<StatsCard title="New Users" value="60" color="green" />
+					<StatsCard title="Sales" value="5.000.000đ" color="purple" />
 				</div>
 				<div className="chart-container">
 					<TrafficChart />
