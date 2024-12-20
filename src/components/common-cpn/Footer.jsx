@@ -1,6 +1,6 @@
 import React from "react";
 import ContactInfo from "../ui/ContactInfo";
-import { FaFacebook, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
@@ -20,8 +20,8 @@ const Footer = () => {
 								<FaFacebook size={33} color="white" />
 							</HashLink>
 
-							<HashLink to="https://www.tiktok.com/@becuu_non">
-								<FaTiktok size={33} color="white" />
+							<HashLink to="https://www.linkedin.com/company/3d-motion-lab/?viewAsMember=true">
+								<FaLinkedin size={33} color="white" />
 							</HashLink>
 
 							<HashLink to="https://www.youtube.com/@3DMotionLabOfficial">
